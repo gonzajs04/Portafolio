@@ -6,17 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9673d7f4bb.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="build/css/app.css">
     
     <title>Portafolio</title>
 
 </head>
 <body>
-
-
-
     <header class="header">
 
         <div class="contenidog-header">
@@ -41,19 +38,29 @@
         </div>
       
         <div class="contenido-navegacion">
+         
             <button class="toggle">
                 <i class="fa-solid fa-bars"></i>
             </button>
+            
+
             <nav class="navegacion">
-              
-              <button class="close">
-                <i class="fa-solid fa-xmark"></i>
-              </button>
+                <div class="contenedor-botones">
+                    <button class="close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+
+                    <button class="btn-dark">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
               <ul class="lista-nav">
                 <li> <a href="">Inicio</a></li>
                 <li> <a class = "smooth "href="#sobremi">Sobre mi</a></li>
                 <li><a class = "smooth " href="#tecnologias">Tecnologias</a></li>
-                <li><a class = "smooth " href="#contacto">Contacto</a></li>
+                <li><a href="#proyectos" class="smooth">Proyectos</a></li>
+
+                <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="https://www.linkedin.com/in/gonza-hernandez/">Linkedin</a></li>
                 <li><a href="https://github.com/gonzajs04?tab=repositories">GITHUB</a></li>
                 <li><a href="" download="">Curriculum</a></li>
@@ -79,7 +86,32 @@
 
                     <div class="sobremi-texto">
                         <h2>Sobre mi</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, rem, consequatur vitae dignissimos alias atque explicabo ea deleniti sed expedita praesentium impedit consequuntur corporis sunt molestias tenetur deserunt, hic dolor!</p>
+                        <hr>
+                        <p>Hola!! Bienvenidos a mi PORTAFOLIO hecho con mucho amor💙
+                            Soy Gonzalo Hernandez, tengo 19 años. Empece en el mundo del desarrollo web, aproximadamente hace 3 meses, con el cual me encariñe muchisimo.
+                            Mi meta es poder ser Desarrollador Full Stack PHP | MERN Stack. Me gusta mucho adentrarme en nuevos desafios y ponerle la mayor pasion y dedicacion posible.
+                            <br>
+                            Este portafolio esta hecho con:
+                        </p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JAVASCRIPT</li>
+                                <li>SASS</li>
+                                <li>GULP</li>
+                            </ul>
+                            <p>
+                            Les dejo un resumen, de todos mis conocimientos y proyectos. Empezando desde el 1(mas antiguo), hasta el 3(MAS RECIENTE)
+                            En caso de querer contactarme, llenen el formulario de contacto. <br>
+                            Muchas gracias,  con amor💙 
+                
+                         
+                            <br>
+                            Gonzalo Hernandez.
+                        </p>
+
+
+                 
                     </div>
 
                     <div class="sobremi-img">
@@ -138,7 +170,7 @@
 
     </section>
 
-<section class="proyectos">
+<section class="proyectos" id="proyectos">
 
     <div class="contenedorg-proyectos">
         <h2>Proyectos</h2>
@@ -147,7 +179,8 @@
             <!--PROYECTO 1-->
             <div class="proyecto">
                 <div class="img-proyecto">
-                    <img src="build/img/PROYECTO 1.png" alt="Imagen el granizado">
+                    <img src="build/img/PROYECTO 2.png" alt="Imagen Almas Piedras">
+               
                 </div>
                 <p class="linea-divisora"></p>
                 <div class="titulo-proyecto">
@@ -169,7 +202,7 @@
             <!--PROYECTO 2-->
             <div class="proyecto">
                 <div class="img-proyecto">
-                    <img src="build/img/PROYECTO 2.png" alt="Imagen Almas Piedras">
+                    <img src="build/img/PROYECTO 1.png" alt="Imagen el granizado">
                 </div>
                 <p class="linea-divisora"></p>
                 <div class="titulo-proyecto">
@@ -217,6 +250,7 @@
 
 
 </section>
+
 
 
 

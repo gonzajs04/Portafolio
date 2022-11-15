@@ -1,5 +1,6 @@
 
 @use '../base/mixins' as m;
+@use '../base/variables' as v;
 
 .sobre-mi{
 
@@ -60,4 +61,24 @@ padding: 4rem 0;
     height: 800px;
     width: 100%;
  
+}
+
+.sobremi-texto{
+p{
+    font-size: 17px;
+}
+ul{
+    color: white;
+    list-style:circle;
+    padding: 0 3rem;
+    text-align: left;
+    &:hover{
+        border: 1px solid white;
+        cursor: pointer;
+    }
+    li{
+        border-left: none;
+        font-family: v.$fuentePrincipal;
+    }
+}
 }

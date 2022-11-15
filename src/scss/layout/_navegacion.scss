@@ -8,7 +8,7 @@ ul{
     li{
         padding: .7rem 0;
         &:hover{
-            border-left: 3px solid #0404cd;
+            border-left: 3px solid #3232f6;
             transition: border .5s;
         }
     }
@@ -93,5 +93,25 @@ ul{
       
    }
 
+
+
+   //DARK MODE BTN
+
+
+
+   .btn-dark{
+    position: absolute;
+    top: 5.5%;
+    left: 10%;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    color: white;
+    &:hover{
+        cursor: pointer;
+        color:black;
+       text-shadow: -1px 0px 5px rgba(164, 164, 164, 0.872);
+    }
+   }
 
 
