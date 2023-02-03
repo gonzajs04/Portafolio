@@ -1,0 +1,168 @@
+@use '../base/mixins' as m;
+.tecnologias{
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(176,176,176,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(176,176,176,1);
+    box-shadow: 0px 0px 5px 0px rgba(176,176,176,1);
+    padding: 2rem 0;
+    h2{
+        text-align: center;
+
+        text-transform: uppercase;
+    
+    }
+    .contenedor-vermas{
+         margin: 7rem 0 0 0;  
+        text-align: center;
+        a{
+            color: black;
+            padding: 1.4rem 2.5rem;
+            border: 2px solid blue;
+            
+            color: black;
+            &:hover{
+                background-color: blue;
+                transition: all .5s;
+                color: white;
+                font-size: 2.1rem;
+            }
+          
+        }
+        
+    }
+  
+}
+
+
+
+
+.contenedor-tecnologias{
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    justify-content: center;
+    @include m.desktop{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 4rem;
+        row-gap: 2rem;
+
+    }
+ 
+
+    div:nth-of-type(3){
+        border-radius: 20px;
+    }
+  
+
+}
+
+.containerg-categorias{
+    margin: 2rem 0;
+    h3{
+        margin: 0;
+        @include m.tablet{
+            font-size: 18px;
+        }
+        font-size: 15px;
+        -webkit-box-shadow: 0px 1px 5px 0px rgba(245,242,245,1);
+        -moz-box-shadow: 0px 1px 5px 0px rgba(245,242,245,1);
+        box-shadow: 0px 1px 5px 0px rgba(245,242,245,1);
+        padding: .5rem 0;
+    }
+    .container-categorias{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        -webkit-box-shadow: 0px 1px 5px 0px rgba(245,242,245,1);
+        -moz-box-shadow: 0px 1px 5px 0px rgba(245,242,245,1);
+        box-shadow: 0px 1px 5px 0px rgba(245,242,245,1);
+    }
+}
+
+.container-categorias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+    height: 214px;
+
+  @include m.tablet{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    place-items: center;
+  }
+    
+}
+
+
+
+//CONTENEDOR IMAGENES
+.logos{
+    width: 100px;
+
+    margin: 3rem auto;
+
+    @include m.tablet{
+     
+    }
+    &:hover{
+        transform: rotate(10deg) scale(1);
+    
+        transition: transform .8s;
+        cursor: pointer;
+    }
+    img{
+        border-radius: 10px;
+}
+}
+.logos h2{
+    margin: 0;
+    height: 10px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.logos{
+   
+    &.js{
+        width: 120px;
+       h2{
+        height: 50px;
+       }
+    }
+    &.BT{
+        h2{
+            height: 40px;
+        }
+    }
+    &.gulp{
+        width: 70px;
+    }
+}
+
+.tecnologias-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 30px;
+    }
+    
+  
+}
+
+.contenedor-tecnologias {
+    &.index{
+        display: flex;
+        flex-direction: row;
+        .logos{
+            width: 200px;
+        }
+    }
+  
+}
