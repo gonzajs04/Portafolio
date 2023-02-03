@@ -1,3 +1,4 @@
+@use '../base/mixins' as m;
 .footer{
  
     background: rgb(1,7,29);
@@ -7,10 +8,17 @@
    
     p{
         color: white;
+        font-size: 15px;
         margin: 0;
         animation: parpadeo 2s linear infinite;
         transition: .5s ease;
 
+    }
+    @include m.tablet{
+        p{
+font-size: 20px;
+        }
+        
     }
 }
 

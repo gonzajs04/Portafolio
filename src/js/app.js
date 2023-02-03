@@ -1,6 +1,7 @@
 
 document.addEventListener('DOMContentLoaded',()=>{
     iniciarApp();
+    
 })
 
 
@@ -67,9 +68,11 @@ function iniciarApp(){
    btnDark.addEventListener('click',(e)=>{
     activarDark(e);
    })
-        
-    
-   
+            
+ 
+
+
+ 
 }
 
 

@@ -72,15 +72,19 @@
 .texto-proyecto{
     padding: .3rem;
     p{
-   
-        font-size: 15px;
-        padding: 0 1rem;
+        font-size: 13px;
+      padding: 0 5rem;
         text-align: center;
+        @include m.tablet{
+            padding: 0 1rem;
+            font-size: 15px;
+        }
+     
     }
 }
 
 .linea-divisora{
-    width: 400px;
+    width: 100%;
     text-align: center;
 
 

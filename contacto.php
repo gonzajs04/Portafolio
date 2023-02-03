@@ -1,20 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="build/css/app.css">
-    <title>Contactame</title>
-</head>
-<body>
-    <div class="contenedor-nav">
-        <nav>
 
-            <a class= "hover-underline-animation" href="index.html">Inicio</a>
-
-        </nav>
-    </div>
+<?php 
+include __DIR__ . '/includes/funciones.php';
+incluirTemplate('header',false);?>
+ 
 
 <div class="contenedor-form">
 
@@ -47,20 +35,18 @@
 
         <input  class="btn-enviar" type="submit"></button>
     </form>
+    <div class="container-back-index">
+        <a style = "color:white;" class="back-index" href="/index.php">Volver</a>
+    </div>
 </div>
+
 
 
 <div class="imagen-contacto">
 
 </div>
-<footer class="footer">
-        
-    <p>portafolio = new Portafolio(creado, &copy, Gonzalo Hernandez)</p>
 
-</footer>
-
-    <script src="src/js/app.js"></script>
-
+<?php incluirTemplate('footer')?>
 
 </body>
 </html>

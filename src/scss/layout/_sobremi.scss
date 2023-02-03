@@ -4,9 +4,8 @@
 
 .sobre-mi{
 
-height: 809px;
 background-color: rgb(19, 19, 19);
-padding: 4rem 0;
+padding: 5rem 0;
 }
 .contenedorg-sobremi{
     position: relative;
@@ -32,7 +31,7 @@ padding: 4rem 0;
         @include m.tablet{
             display: grid;
             place-items: center;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: 2fr 1fr;
                 
         h2,p{
             
@@ -49,16 +48,14 @@ padding: 4rem 0;
 }
 
 
-.sobremi-img{
-    width: 350px;
-}
+
 
 /*PARTICULAS*/
 
 #particles-js{
     position: absolute;
     background-color: rgb(19, 19, 19);
-    height: 800px;
+    height: 700px;
     width: 100%;
  
 }
@@ -66,6 +63,11 @@ padding: 4rem 0;
 .sobremi-texto{
 p{
     font-size: 17px;
+    strong{
+        a{
+            color: white;
+        }
+    }
 }
 ul{
     color: white;

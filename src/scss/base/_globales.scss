@@ -1,5 +1,6 @@
 @use 'variables' as v;
 
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -34,7 +35,44 @@ picture {
     display: block;
 }
 
-h1,h2,h3,h4,h5,h6,p,a{
+h1,h2,h3,h4,h5,h6{
     font-family: v.$fuentePrincipal;
+    font-weight: 510;
 }
 
+p,a{
+    font-family: v.$fuentePrincipal; 
+}
+.p-translate{
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+.container-back-index
+{
+    position: relative;
+    z-index: 10;
+    margin: 2rem 0;
+}
+.back-index{
+    display: inline;
+    color: black;
+    margin: 3rem 5rem;
+    font-weight: 700;
+    font-size: 16px;
+
+        animation: latidos .8s infinite ;
+
+}
+
+@keyframes latidos{
+    0%{
+       transform: none;
+    }
+    50%{
+     font-size: 15px;
+    }
+    100%{
+      transform: none;
+    }
+}
