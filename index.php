@@ -80,9 +80,10 @@ incluirTemplate('header',true)
               
                 <a href="https://developer.mozilla.org/es/docs/Web/CSS">
                 <picture>
-                
-                    <source srcset="/build/img/css.webp" type="image/webp">
-                    <img loading ="lazy" src="/build/img/css.webp" alt="LOGO css">
+            
+                <source srcset="/build/img/CSS.webp" type="image/webp">
+
+                    <img loading ="lazy" src="/build/img/CSS.png" alt="LOGO css">
                 </picture>
             </a>
             </div>
@@ -139,7 +140,7 @@ incluirTemplate('header',true)
             <!--PROYECTO 2-->
             <div class="proyecto">
                 <div class="img-proyecto">
-                    <img src="/build/img/PROYECTO 1.png" alt="Imagen el granizado">
+                    <img src="/build/img/Proyecto 1.png" alt="Imagen el granizado">
                 </div>
                 <p class="linea-divisora"></p>
                 <div class="titulo-proyecto">

@@ -10,7 +10,7 @@ function iniciarApp(){
     const botonMenu = document.querySelector('.toggle');
     const navegacion = document.querySelector('.navegacion');
 
-    if(!(botonMenu ==null)){
+    if((botonMenu !=null)){
    //MAL, PASAR A FUNCION A PARTE LLAMADA ABRIR MENU DE NAV
     botonMenu.addEventListener('click',()=>{
        
@@ -24,7 +24,7 @@ function iniciarApp(){
 
     const botonCerrar = document.querySelector('.close');
 
-    if(!(botonCerrar == null)){
+    if((botonCerrar != null)){
      botonCerrar.addEventListener('click',()=>{
 
         navegacion.classList.remove('visible');
@@ -55,7 +55,7 @@ function iniciarApp(){
 
     /**Enviar mail con form de contacto */
     const botonEnviar = document.querySelector('.btn-enviar');
-   if(!(botonEnviar == null)){ //CONTROLO SI EXISTE UNA CLASE LLAMADA BOTON ENVIAR EN MI ARCHIVO HTML
+   if(botonEnviar != null){ //CONTROLO SI EXISTE UNA CLASE LLAMADA BOTON ENVIAR EN MI ARCHIVO HTML
     botonEnviar.addEventListener('click',(e)=>{
         e.preventDefault();
         enviarMail(e);

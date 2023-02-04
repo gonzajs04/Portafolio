@@ -2,19 +2,19 @@
 include __DIR__ . '/classes/Lenguaje.php';
 
                          $lenguajes = [new Lenguaje("HTML","HTML.png","HTML.webp","https://developer.mozilla.org/es/docs/Web/HTML","FRONT"),
-                                       new Lenguaje("CSS","css.png","css.webp","","FRONT"),
-                                       new Lenguaje("JavaScript","logojs.svg","","","FRONT"),
+                                       new Lenguaje("CSS","CSS.png","CSS.webp","https://developer.mozilla.org/es/docs/Web/CSS","FRONT"),
+                                       new Lenguaje("JavaScript","logojs.svg","","https://developer.mozilla.org/es/docs/Web/JavaScript","FRONT"),
                                      
-                                       new Lenguaje("Sass","logo_sass.png","logo_sass.webp","","FRONT"),
-                                       new Lenguaje("Bootstrap","bootstrap.png","bootstrap.webp","","FRONT"),
-                                       new Lenguaje("NodeJS","logo_node.png","logo_node.webp","","BACK"),
-                                       new Lenguaje("GulpJS","logo_gulp.png","logo_gulp.webp","","BACK"),
-                                       new Lenguaje("PHP","logo-php.png","logo-php.webp","","BACK"),
-                                       new Lenguaje("GIT","logo-git.png","logo-git.webp","","CONTROL"),
-                                       new Lenguaje("GITHUB","logo-github.png","logo-github.webp","","SERVER"),
-                                       new Lenguaje("MYSQL","MYSQL.png","MYSQL.webp","","DATABASE"),
-                                       new Lenguaje("NPM","npm-logo.png","npm-logo.webp","","GESTOR"),
-                                       new Lenguaje("COMPOSER","composer-logo.png","composer-logo.webp","","GESTOR")
+                                       new Lenguaje("Sass","logo_sass.png","logo_sass.webp","https://es.wikipedia.org/wiki/Sass","FRONT"),
+                                       new Lenguaje("Bootstrap","bootstrap.png","bootstrap.webp","https://es.wikipedia.org/wiki/Bootstrap_(framework)","FRONT"),
+                                       new Lenguaje("NodeJS","logo_node.png","logo_node.webp","https://es.wikipedia.org/wiki/Node.js","BACK"),
+                                       new Lenguaje("GulpJS","logo_gulp.png","logo_gulp.webp","https://en.wikipedia.org/wiki/Gulp.js","BACK"),
+                                       new Lenguaje("PHP","logo-php.png","logo-php.webp","https://www.php.net/manual/es/intro-whatis.php","BACK"),
+                                       new Lenguaje("GIT","logo-git.png","logo-git.webp","https://es.wikipedia.org/wiki/Git","CONTROL"),
+                                       new Lenguaje("GITHUB","logo-github.png","logo-github.webp","https://es.wikipedia.org/wiki/GitHub","SERVER"),
+                                       new Lenguaje("MYSQL","MYSQL.png","MYSQL.webp","https://es.wikipedia.org/wiki/MySQL","DATABASE"),
+                                       new Lenguaje("NPM","npm-logo.png","npm-logo.webp","https://es.wikipedia.org/wiki/Npm","GESTOR"),
+                                       new Lenguaje("COMPOSER","composer-logo.png","composer-logo.webp","https://styde.net/que-es-composer-y-como-usarlo/","GESTOR")
                                     
                          
 ];
@@ -40,7 +40,7 @@ include __DIR__ . '/classes/Lenguaje.php';
                                             <picture>
                                             <a href="<?php $lenguaje->getUrl();?>">
                                                 <source srcset="build/img/<?php $lenguaje->getImagenComprimida();?>" type="image/webp">
-                                                <img loading ="lazy" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO HTML">
+                                                <img loading ="lazy" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO FRONT">
                                                 </a>
                                             </picture>
 
@@ -61,7 +61,7 @@ include __DIR__ . '/classes/Lenguaje.php';
                                             <picture>
                                             <a href="<?php $lenguaje->getUrl();?>">
                                                 <source srcset="build/img/<?php $lenguaje->getImagenComprimida();?>" type="image/webp">
-                                                <img loading ="lazy" class="" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO HTML">
+                                                <img loading ="lazy" class="" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO BACK">
                                                 </a>
                                             </picture>
 
@@ -83,7 +83,7 @@ include __DIR__ . '/classes/Lenguaje.php';
                                             <picture>
                                             <a href="<?php $lenguaje->getUrl();?>">
                                                 <source srcset="build/img/<?php $lenguaje->getImagenComprimida();?>" type="image/webp">
-                                                <img loading ="lazy" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO HTML">
+                                                <img loading ="lazy" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO CONTROL DE VERSIONES">
                                                 </a>
                                             </picture>
 
@@ -106,7 +106,7 @@ include __DIR__ . '/classes/Lenguaje.php';
                                             <picture>
                                             <a href="<?php $lenguaje->getUrl();?>">
                                                 <source srcset="build/img/<?php $lenguaje->getImagenComprimida();?>" type="image/webp">
-                                                <img loading ="lazy" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO HTML">
+                                                <img loading ="lazy" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO SERVERS">
                                                 </a>
                                             </picture>
 
@@ -127,7 +127,7 @@ include __DIR__ . '/classes/Lenguaje.php';
                                             <picture>
                                             <a href="<?php $lenguaje->getUrl();?>">
                                                 <source srcset="build/img/<?php $lenguaje->getImagenComprimida();?>" type="image/webp">
-                                                <img loading ="lazy" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO HTML">
+                                                <img loading ="lazy" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO DATABASE">
                                                 </a>
                                             </picture>
 
@@ -150,7 +150,7 @@ include __DIR__ . '/classes/Lenguaje.php';
                                             <picture>
                                             <a href="<?php $lenguaje->getUrl();?>">
                                                 <source srcset="build/img/<?php $lenguaje->getImagenComprimida();?>" type="image/webp">
-                                                <img loading ="lazy" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO HTML">
+                                                <img loading ="lazy" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO GESTOR">
                                                 </a>
                                             </picture>
 
