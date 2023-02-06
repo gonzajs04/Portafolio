@@ -2,19 +2,19 @@
 include __DIR__ . '/classes/Lenguaje.php';
 
                          $lenguajes = [new Lenguaje("HTML","HTML.png","HTML.webp","https://developer.mozilla.org/es/docs/Web/HTML","FRONT"),
-                                       new Lenguaje("CSS","CSS.png","CSS.webp","https://developer.mozilla.org/es/docs/Web/CSS","FRONT"),
-                                       new Lenguaje("JavaScript","logojs.svg","","https://developer.mozilla.org/es/docs/Web/JavaScript","FRONT"),
+                                       new Lenguaje("CSS","css.png","css.webp","","FRONT"),
+                                       new Lenguaje("JavaScript","logojs.svg","","","FRONT"),
                                      
-                                       new Lenguaje("Sass","logo_sass.png","logo_sass.webp","https://es.wikipedia.org/wiki/Sass","FRONT"),
-                                       new Lenguaje("Bootstrap","bootstrap.png","bootstrap.webp","https://es.wikipedia.org/wiki/Bootstrap_(framework)","FRONT"),
-                                       new Lenguaje("NodeJS","logo_node.png","logo_node.webp","https://es.wikipedia.org/wiki/Node.js","BACK"),
-                                       new Lenguaje("GulpJS","logo_gulp.png","logo_gulp.webp","https://en.wikipedia.org/wiki/Gulp.js","BACK"),
-                                       new Lenguaje("PHP","logo-php.png","logo-php.webp","https://www.php.net/manual/es/intro-whatis.php","BACK"),
-                                       new Lenguaje("GIT","logo-git.png","logo-git.webp","https://es.wikipedia.org/wiki/Git","CONTROL"),
-                                       new Lenguaje("GITHUB","logo-github.png","logo-github.webp","https://es.wikipedia.org/wiki/GitHub","SERVER"),
-                                       new Lenguaje("MYSQL","MYSQL.png","MYSQL.webp","https://es.wikipedia.org/wiki/MySQL","DATABASE"),
-                                       new Lenguaje("NPM","npm-logo.png","npm-logo.webp","https://es.wikipedia.org/wiki/Npm","GESTOR"),
-                                       new Lenguaje("COMPOSER","composer-logo.png","composer-logo.webp","https://styde.net/que-es-composer-y-como-usarlo/","GESTOR")
+                                       new Lenguaje("Sass","logo_sass.png","logo_sass.webp","","FRONT"),
+                                       new Lenguaje("Bootstrap","bootstrap.png","bootstrap.webp","","FRONT"),
+                                       new Lenguaje("NodeJS","logo_node.png","logo_node.webp","","BACK"),
+                                       new Lenguaje("GulpJS","logo_gulp.png","logo_gulp.webp","","BACK"),
+                                       new Lenguaje("PHP","logo-php.png","logo-php.webp","","BACK"),
+                                       new Lenguaje("GIT","logo-git.png","logo-git.webp","","CONTROL"),
+                                       new Lenguaje("GITHUB","logo-github.png","logo-github.webp","","SERVER"),
+                                       new Lenguaje("MYSQL","MYSQL.png","MYSQL.webp","","DATABASE"),
+                                       new Lenguaje("NPM","npm-logo.png","npm-logo.webp","","GESTOR"),
+                                       new Lenguaje("COMPOSER","composer-logo.png","composer-logo.webp","","GESTOR")
                                     
                          
 ];
@@ -26,13 +26,13 @@ include __DIR__ . '/classes/Lenguaje.php';
 
        
            
-            <div class="contenedor-tecnologias">
+            <div class="contenedor-tecnologias" >
 
          
                         <div class="containerg-categorias">
                         <h3>Frontend</h3>
                        
-                            <div class="container-categorias">
+                            <div class="container-categorias" data-aos ="flip-down">
                                 <?php foreach($lenguajes as $lenguaje){
                                     if($lenguaje->categoria === 'FRONT'){ ?>
                                             <div class="logos">
@@ -40,7 +40,7 @@ include __DIR__ . '/classes/Lenguaje.php';
                                             <picture>
                                             <a href="<?php $lenguaje->getUrl();?>">
                                                 <source srcset="build/img/<?php $lenguaje->getImagenComprimida();?>" type="image/webp">
-                                                <img loading ="lazy" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO FRONT">
+                                                <img loading ="lazy" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO HTML">
                                                 </a>
                                             </picture>
 
@@ -52,7 +52,7 @@ include __DIR__ . '/classes/Lenguaje.php';
                     <div class="containerg-categorias">
                         <h3 ">Backend</h3>
                         
-                        <div class="container-categorias">
+                        <div class="container-categorias" data-aos ="flip-down">
                     
                         <?php foreach($lenguajes as $key => $lenguaje ){
                                     if($lenguaje->categoria === 'BACK'){ ?>
@@ -61,7 +61,7 @@ include __DIR__ . '/classes/Lenguaje.php';
                                             <picture>
                                             <a href="<?php $lenguaje->getUrl();?>">
                                                 <source srcset="build/img/<?php $lenguaje->getImagenComprimida();?>" type="image/webp">
-                                                <img loading ="lazy" class="" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO BACK">
+                                                <img loading ="lazy" class="" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO HTML">
                                                 </a>
                                             </picture>
 
@@ -74,7 +74,7 @@ include __DIR__ . '/classes/Lenguaje.php';
                     
                 <div class="containerg-categorias">
                     <h3>Sistemas de control de versiones</h3>
-                    <div class="container-categorias">
+                    <div class="container-categorias" data-aos ="flip-down">
                         <!--OTRA TECNOLOGIA-->
                         <?php foreach($lenguajes as $lenguaje){
                                     if($lenguaje->categoria === 'CONTROL'){ ?>
@@ -83,7 +83,7 @@ include __DIR__ . '/classes/Lenguaje.php';
                                             <picture>
                                             <a href="<?php $lenguaje->getUrl();?>">
                                                 <source srcset="build/img/<?php $lenguaje->getImagenComprimida();?>" type="image/webp">
-                                                <img loading ="lazy" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO CONTROL DE VERSIONES">
+                                                <img loading ="lazy" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO HTML">
                                                 </a>
                                             </picture>
 
@@ -95,18 +95,18 @@ include __DIR__ . '/classes/Lenguaje.php';
                     
 
                 
-                <div class="containerg-categorias">
+                <div class="containerg-categorias" data-aos ="flip-down">
                     <h3>Servers</h3>
-                    <div class="container-categorias">
+                    <div class="container-categorias" data-aos ="flip-down">
                             <!--OTRA TECNOLOGIA-->
                             <?php foreach($lenguajes as $lenguaje){
                                     if($lenguaje->categoria === 'SERVER'){ ?>
-                                            <div class="logos">
+                                            <div class="logos" >
                                         
                                             <picture>
                                             <a href="<?php $lenguaje->getUrl();?>">
                                                 <source srcset="build/img/<?php $lenguaje->getImagenComprimida();?>" type="image/webp">
-                                                <img loading ="lazy" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO SERVERS">
+                                                <img loading ="lazy" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO HTML">
                                                 </a>
                                             </picture>
 
@@ -116,7 +116,7 @@ include __DIR__ . '/classes/Lenguaje.php';
                     </div>
                 </div>
                     
-                <div class="containerg-categorias">
+                <div class="containerg-categorias" data-aos ="fade-left">
                     <h3>Bases de datos</h3>
                     <div class="container-categorias">
                             <!--OTRA TECNOLOGIA-->
@@ -127,7 +127,7 @@ include __DIR__ . '/classes/Lenguaje.php';
                                             <picture>
                                             <a href="<?php $lenguaje->getUrl();?>">
                                                 <source srcset="build/img/<?php $lenguaje->getImagenComprimida();?>" type="image/webp">
-                                                <img loading ="lazy" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO DATABASE">
+                                                <img loading ="lazy" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO HTML">
                                                 </a>
                                             </picture>
 
@@ -140,7 +140,7 @@ include __DIR__ . '/classes/Lenguaje.php';
          
 
              <!--OTRA TECNOLOGIA-->
-                <div class="containerg-categorias">
+                <div class="containerg-categorias" data-aos ="fade-right">
                     <h3>Gestor de paquetes</h3>
                     <div class="container-categorias">
                     <?php foreach($lenguajes as $lenguaje){
@@ -150,7 +150,7 @@ include __DIR__ . '/classes/Lenguaje.php';
                                             <picture>
                                             <a href="<?php $lenguaje->getUrl();?>">
                                                 <source srcset="build/img/<?php $lenguaje->getImagenComprimida();?>" type="image/webp">
-                                                <img loading ="lazy" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO GESTOR">
+                                                <img loading ="lazy" src="build/img/<?php $lenguaje->getImagen();?>" alt="LOGO HTML">
                                                 </a>
                                             </picture>
 
@@ -169,7 +169,7 @@ include __DIR__ . '/classes/Lenguaje.php';
 
     </section>
 
-    <div class="container-back-index">
+    <div class="container-back-index" >
         <a class="back-index" href="/index.php">Volver</a>
     </div>
 

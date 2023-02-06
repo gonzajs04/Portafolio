@@ -10,8 +10,8 @@ incluirTemplate('header',true)
     <section id="sobremi" class="sobre-mi">
 
         <div class="contenedorg-sobremi">
-            <div class="contenedor-sobremi">
-                <div class="contenedor grid-sobremi">
+            <div class="contenedor-sobremi" >
+                <div class="contenedor grid-sobremi" data-aos ="fade-up" >
 
                     <div class="sobremi-texto">
                         <h2>Sobre mi</h2>
@@ -55,7 +55,7 @@ incluirTemplate('header',true)
 
     </section>
 
-    <section id="tecnologias" class="tecnologias">
+    <section id="tecnologias" class="tecnologias"  data-aos = "fade-right">
 
         <div class="tecnologias-title">
             <img src="/build/img/logo-codeopen.svg" alt="">
@@ -66,7 +66,7 @@ incluirTemplate('header',true)
         <div class="contenedorg-tecnologias">
             <div class="contenedor-tecnologias index">
                 
-                <div class="logos">
+                <div class="logos" >
            
                 <picture>
                    <a href="https://developer.mozilla.org/es/docs/Web/HTML">
@@ -80,10 +80,9 @@ incluirTemplate('header',true)
               
                 <a href="https://developer.mozilla.org/es/docs/Web/CSS">
                 <picture>
-            
-                <source srcset="/build/img/CSS.webp" type="image/webp">
-
-                    <img loading ="lazy" src="/build/img/CSS.png" alt="LOGO css">
+                
+                    <source srcset="/build/img/css.webp" type="image/webp">
+                    <img loading ="lazy" src="/build/img/css.webp" alt="LOGO css">
                 </picture>
             </a>
             </div>
@@ -106,7 +105,7 @@ incluirTemplate('header',true)
 
     </section>
 
-<section class="proyectos" id="proyectos">
+<section class="proyectos" id="proyectos"  data-aos = "fade-down">
 
     <div class="contenedorg-proyectos">
         <h2>Proyectos</h2>
@@ -140,7 +139,7 @@ incluirTemplate('header',true)
             <!--PROYECTO 2-->
             <div class="proyecto">
                 <div class="img-proyecto">
-                    <img src="/build/img/Proyecto 1.png" alt="Imagen el granizado">
+                    <img src="/build/img/PROYECTO 1.png" alt="Imagen el granizado">
                 </div>
                 <p class="linea-divisora"></p>
                 <div class="titulo-proyecto">
@@ -184,7 +183,7 @@ incluirTemplate('header',true)
             </div>
 
   <!--PROYECTO 4-->
-  <div class="proyecto">
+  <div class="proyecto" >
     <div class="img-proyecto">
         <source srcset="build/img/Bienesraices.webp" type="image/webp">
         <img src="build/img/Bienesraices.png" alt="Imagen festival">
