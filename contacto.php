@@ -47,6 +47,3 @@ incluirTemplate('header',false);?>
 </div>
 
 <?php incluirTemplate('footer')?>
-
-</body>
-</html>

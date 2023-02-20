@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="/build/css/app.css">
-
-    
+  
     <title>Portafolio</title>
 
 </head>
@@ -20,15 +20,19 @@
     <div class="contenidog-header">
             <div class="contenido-header">
 
-                <div class="imagen-personal">
+                <div class="imagen-personal"  data-aos="fade-right"  data-aos-delay="500">
                     <picture>
                         
                         <source srcset="/build/img/foto.webp" type="image/webp">
                         <img loading ="lazy" src="build/img/foto.jpg" alt="Imagen personal">
                     </picture>
-                    <h2><span>Gonzalo</span> Hernandez</h2>
+                </div>
+                <div class="header-text" data-aos="fade-left" data-aos-delay="300">
+                <h2><span>Gonzalo</span> Hernandez</h2>
                     <p>Desarrollador 👨‍💻 WEB</p>
                 </div>
+                
+            
 
              
 
@@ -42,7 +46,7 @@
       
         <div class="contenido-navegacion">
          
-            <button class="toggle">
+            <button class="toggle" data-aos="fade-down">
                 <i class="fa-solid fa-bars"></i>
             </button>
             

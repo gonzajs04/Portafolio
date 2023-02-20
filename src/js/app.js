@@ -1,12 +1,16 @@
 
+
+
 document.addEventListener('DOMContentLoaded',()=>{
-    iniciarApp();
     
+    iniciarApp();
+
 })
 
 
 function iniciarApp(){
-   
+
+
     const botonMenu = document.querySelector('.toggle');
     const navegacion = document.querySelector('.navegacion');
 
@@ -70,11 +74,48 @@ function iniciarApp(){
    })
             
  
-
-
+   recorrerProyectos();
  
 }
 
+
+function recorrerProyectos(){
+    const containers = document.querySelectorAll('.proyecto');
+    if(containers!=null){
+
+        containers.forEach(container=>{
+
+            desplegarDescripcion(container);
+
+        })
+
+    }
+}
+
+
+function desplegarDescripcion(containerDescripcion){
+
+    const textoDescripcion = containerDescripcion.querySelector('.texto-proyecto')
+    const btnDescripcion = containerDescripcion.querySelector('.container-descripcionbtn button');
+
+    
+    btnDescripcion.addEventListener('click',()=>{
+   
+        if(textoDescripcion.style.height == "auto"){
+            textoDescripcion.style.height = "100px";
+            btnDescripcion.textContent = 'Ver Mas';
+
+        }else {
+    
+
+            textoDescripcion.style.height = "auto";
+          
+            btnDescripcion.textContent = 'Ver Menos';
+        }
+    })
+
+
+}
 
 function activarDark(e){
     const body = document.querySelector('body');

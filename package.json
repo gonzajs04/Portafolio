@@ -27,6 +27,8 @@
     "terser": "^4.8.0"
   },
   "dependencies": {
-    "@fontsource/poppins": "^4.5.10"
+    "@fontsource/poppins": "^4.5.10",
+    "aos": "^2.3.4"
   }
+  
 }
