@@ -11,7 +11,8 @@ Actualmente, esta hecho con: HTML, SASS, JAVASCRIPT, GULPJS | This is my last FR
 
 ", "https://bienesraicesfront.netlify.app/")),
 
-    (new Proyecto("CloudMovie", "cloudmovie", "Este es mi primer proyecto como FULL STACK DEVELOPER PHP, el cual consiste, del manejo de las tecnologias: HTML,CSS,SCSS,JAVASCRIPT,GULP,PHP,MYSQL. Este proyecto es una pagina de peliculas con mi propia base de datos, la cual podes, BUSCAR PELICULAS, VER SUS TRAILERS, FILTRAR POR GENEROS, Y POSEE UN ADMINISTRADOR DE PELICULAS PARA: Agregar peliculas, Actualizarlas y eliminarlas ", "https://cloudmoviegh.000webhostapp.com/"))
+    (new Proyecto("CloudMovie", "cloudmovie", "Este es mi primer proyecto como FULL STACK DEVELOPER PHP, el cual consiste, del manejo de las tecnologias: HTML,CSS,SCSS,JAVASCRIPT,GULP,PHP,MYSQL. Este proyecto es una pagina de peliculas con mi propia base de datos, la cual podes, BUSCAR PELICULAS, VER SUS TRAILERS, FILTRAR POR GENEROS, Y POSEE UN ADMINISTRADOR DE PELICULAS PARA: Agregar peliculas, Actualizarlas y eliminarlas ", "https://cloudmoviegh.000webhostapp.com/")),
+    (new Proyecto("WeatherLike","weatherlike","Este es un proyecto el cual CONSUMO el API de OPENWEATHER. Este proyecto permite visualizar todas las TEMPERATURAS y otras cosas de todo el mundo. Para ver la pagina, toca el link ","https://weatherlikev2.netlify.app/"))
 ]
 ?>
 
