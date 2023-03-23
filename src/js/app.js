@@ -3,6 +3,7 @@
 
 document.addEventListener('DOMContentLoaded',()=>{
     
+
     iniciarApp();
 
 })
@@ -21,10 +22,9 @@ function iniciarApp(){
         navegacion.classList.add('visible');
         botonMenu.classList.add('novisible');
     })
-}
+
 
   //MAL, HACER EN FUNCION APARTE LALMADA CERRAR NAVEGACION
-
 
     const botonCerrar = document.querySelector('.close');
 
@@ -36,7 +36,7 @@ function iniciarApp(){
 
         })
     }
-        
+   
 
    //FUNCION PARA BAJAR FLUIDO DE SECCION AL TOCAR LINK NAV
    const enlaces = document.querySelectorAll('.smooth');
@@ -54,9 +54,6 @@ function iniciarApp(){
         })
      })
 
-
-
-
     /**Enviar mail con form de contacto */
     const botonEnviar = document.querySelector('.btn-enviar');
    if(!(botonEnviar == null)){ //CONTROLO SI EXISTE UNA CLASE LLAMADA BOTON ENVIAR EN MI ARCHIVO HTML
@@ -73,10 +70,11 @@ function iniciarApp(){
     activarDark(e);
    })
             
- 
    recorrerProyectos();
+
  
 }
+
 
 
 function recorrerProyectos(){
@@ -151,4 +149,4 @@ function enviarMail(e){
 
 }
 
-
+}s

@@ -19,6 +19,12 @@
     }
 }
 
+@mixin desktopXL {
+    @media (min-width: 1500px) {
+        @content;
+    }
+}
+
 @mixin grid($cantCols,$espacio){
     display: grid;
     grid-template-columns: repeat($cantCols,$espacio);

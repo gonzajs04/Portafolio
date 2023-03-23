@@ -14,16 +14,23 @@
          margin: 7rem 0 0 0;  
         text-align: center;
         a{
+
+            @include m.tablet{
+                padding: 1.4rem 2.5rem;
+            }
             color: black;
-            padding: 1.4rem 2.5rem;
-            border: 2px solid blue;
+             padding: 1.2rem 2.2rem;
+             font-size: 13px;
+
+            border-bottom: 2px solid #070707;
             
             color: black;
+
             &:hover{
-                background-color: blue;
+                background-color: #070707;
                 transition: all .5s;
                 color: white;
-                font-size: 2.1rem;
+                font-size: 1.4rem;
             }
           
         }

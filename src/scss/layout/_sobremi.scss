@@ -10,7 +10,10 @@
 height: 100%;
 background: rgb(0,0,0);
 background: linear-gradient(170deg, rgba(0,0,0,1) 0%, rgba(1,4,25,1) 100%);
-padding: 5rem 0;
+padding: 5rem 3rem;
+@include m.tablet{
+    padding: 5rem 0;
+}
 }
 .contenedorg-sobremi{
     position: relative;
@@ -33,7 +36,7 @@ padding: 5rem 0;
             padding: 0 2rem;
             text-align: center;
         }
-        @include m.tablet{
+        @include m.desktopXL{
             display: grid;
             place-items: center;
             grid-template-columns: 2fr 1fr;
@@ -67,9 +70,18 @@ padding: 5rem 0;
 }
 
 .sobremi-texto{
+    overflow: hidden;
 
-p{
-    font-size: 17px;
+    h2{
+        font-weight: 600;
+    }
+
+    p{
+        font-size: 13px;
+    @include m.tablet{
+        font-size: 17px;
+    }
+
     strong{
         a{
             color: white;
@@ -81,21 +93,27 @@ ul{
     list-style:circle;
     padding: 0 3rem;
     text-align: left;
-    &:hover{
-        border: 1px solid white;
-        cursor: pointer;
-    }
+ 
     li{
         border-left: none;
         font-family: v.$fuentePrincipal;
+        font-size:13px;
+
+        @include m.tablet{
+            font-size: 17px;
+        }
     }
+
+   
 }
 }
 
 .sobremi-img{
    animation: none;
-    @include m.tablet{
+   width: 400px;
+    @include m.desktop{
         animation: aumentarMoverImg 7s linear infinite;
+     
     }
 }
 
@@ -111,7 +129,7 @@ ul{
 
     40%,50%{
         transform: scale(1.15);
-        transform: translateX(30%) translateY(-10%);
+        transform: translateX(-20%) translateY(-10%);
        
     }
     to{

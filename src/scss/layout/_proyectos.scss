@@ -2,12 +2,19 @@
 @use '../base/mixins' as m;
 
 .proyectos{
-    padding: 3rem 0;
+    padding: 3rem 5rem;
+    @include m.tablet{
+        padding: 3rem 0;
+    }
    
 }
 .proyecto{
+    display: grid;
+  
     padding-bottom: 2rem;
-    margin: 1rem 0;
+
+    margin: 1rem auto;
+    width: 100%;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(176,176,176,1);
     -moz-box-shadow: 0px 0px 5px 0px rgba(176,176,176,1);
     box-shadow: 0px 0px 5px 0px rgba(176,176,176,1);
@@ -44,6 +51,8 @@
     h3{
         text-align: center;
         margin-bottom: 0;
+        font-weight: 600;
+    
         a{
             color: rgba(0, 0, 0, 0.856);
            
@@ -59,13 +68,22 @@
     a{
         
         color: rgba(0, 0, 0, 0.856);
-        border: 2px solid black;
-        padding: 1.2rem;
+        border-bottom: 2px solid rgb(7, 7, 7);
+
+        padding: 1rem;
+        font-size: 14px;
         &:hover{
-            background-color: black;
             color: white;
-            transition: all .3s ease-in-out;
+            background-color: rgb(7, 7, 7);
+       
+            transition: background .3s ease-in-out;
         }
+     
+    }
+  
+   
+    @include m.tablet{
+        padding: 1.2rem;
     }
 }
 
@@ -74,12 +92,15 @@
     height: 100px;
     overflow: hidden;
     p{
-        font-size: 13px;
-      padding: 0 5rem;
+        font-size: 11px;
+      
         text-align: center;
-        @include m.tablet{
+        padding: 0 1rem;
+        @include m.desktop{
             padding: 0 1rem;
             font-size: 15px;
+            padding: 0 1rem;
+            font-size:13px;
         }
      
     }
