@@ -32,7 +32,7 @@ include __DIR__ . '/classes/Lenguaje.php';
                         <div class="containerg-categorias"  >
                         <h3>Frontend</h3>
                        
-                            <div class="container-categorias" data-aos="fade-down" data-aos-delay="200">
+                            <div class="container-categorias" >
                                 <?php foreach($lenguajes as $lenguaje){
                                     if($lenguaje->categoria === 'FRONT'){ ?>
                                             <div class="logos">
@@ -50,9 +50,9 @@ include __DIR__ . '/classes/Lenguaje.php';
                         </div> 
                         </div><!--TERMINA CONTAINERG FRONT-->
                     <div class="containerg-categorias">
-                        <h3 ">Backend</h3>
+                        <h3>Backend</h3>
                         
-                        <div class="container-categorias" data-aos="fade-down" data-aos-delay="300">
+                        <div class="container-categorias">
                     
                         <?php foreach($lenguajes as $key => $lenguaje ){
                                     if($lenguaje->categoria === 'BACK'){ ?>
@@ -74,7 +74,7 @@ include __DIR__ . '/classes/Lenguaje.php';
                     
                 <div class="containerg-categorias">
                     <h3>Sistemas de control de versiones</h3>
-                    <div class="container-categorias" data-aos="fade-down" data-aos-delay="500">
+                    <div class="container-categorias" >
                         <!--OTRA TECNOLOGIA-->
                         <?php foreach($lenguajes as $lenguaje){
                                     if($lenguaje->categoria === 'CONTROL'){ ?>
@@ -97,7 +97,7 @@ include __DIR__ . '/classes/Lenguaje.php';
                 
                 <div class="containerg-categorias">
                     <h3>Servers</h3>
-                    <div class="container-categorias" data-aos="fade-down" data-aos-delay="700">
+                    <div class="container-categorias">
                             <!--OTRA TECNOLOGIA-->
                             <?php foreach($lenguajes as $lenguaje){
                                     if($lenguaje->categoria === 'SERVER'){ ?>
@@ -118,7 +118,7 @@ include __DIR__ . '/classes/Lenguaje.php';
                     
                 <div class="containerg-categorias" >
                     <h3>Bases de datos</h3>
-                    <div class="container-categorias" data-aos="fade-down" data-aos-delay="900">
+                    <div class="container-categorias">
                             <!--OTRA TECNOLOGIA-->
                             <?php foreach($lenguajes as $lenguaje){
                                     if($lenguaje->categoria === 'DATABASE'){ ?>
@@ -142,7 +142,7 @@ include __DIR__ . '/classes/Lenguaje.php';
              <!--OTRA TECNOLOGIA-->
                 <div class="containerg-categorias">
                     <h3>Gestor de paquetes</h3>
-                    <div class="container-categorias" data-aos="fade-down" data-aos-delay="1100" >
+                    <div class="container-categorias" data-aos="fade-down" data-aos-delay="600" >
                     <?php foreach($lenguajes as $lenguaje){
                                     if($lenguaje->categoria === 'GESTOR'){ ?>
                                             <div class="logos">

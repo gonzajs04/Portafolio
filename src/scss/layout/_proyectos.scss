@@ -1,134 +1,163 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
-.proyectos{
-    padding: 3rem 5rem;
-    @include m.tablet{
-        padding: 3rem 0;
-    }
-   
-}
-.proyecto{
-    display: grid;
-  
-    padding-bottom: 2rem;
-
-    margin: 1rem auto;
-    width: 100%;
+.proyectos {
     -webkit-box-shadow: 0px 0px 5px 0px rgba(176,176,176,1);
     -moz-box-shadow: 0px 0px 5px 0px rgba(176,176,176,1);
     box-shadow: 0px 0px 5px 0px rgba(176,176,176,1);
-    border-radius: 18px;
+    padding: 0;
 
-    .img-proyecto{
-        img{
-            border-radius: 15px;
+    @include m.tablet {
+        padding: 3rem 0;
+    }
+    
+
+}
+
+.proyecto {
+    display: grid;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 30px;
+    transition: transform .2s ease-in-out;
+
+    margin: 1rem auto;
+    width: 76%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(176, 176, 176, 1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(176, 176, 176, 1);
+    box-shadow: 0px 0px 5px 0px rgba(176, 176, 176, 1);
+
+    .img-proyecto {
+        max-height: 245px;
+
+        min-height: 244px;
+        height: 100%;
+        width: 100%;
+
+        picture {
+            height: 100%;
         }
+
+        img {
+            border-top-left-radius: 20px;
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.050);
+    }
+
+    @include m.tablet{
+        width: 76%;
     }
 }
 
-.contenedorg-proyectos{
-        h2{
-            text-align: center;
-        }
+.contenedorg-proyectos {
+    h2 {
+        text-align: center;
+    }
 
 }
-.contenedor-proyectos{
+
+.contenedor-proyectos {
+    max-width: 1400px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    @include m.tablet{
-        @include m.grid(3,1fr);
-        column-gap: 3rem;
+    @include m.tablet {
+        @include m.grid(3, 1fr);
+        column-gap: 2rem;
     }
- 
-    
-       
+
+
+
 }
-.titulo-proyecto{
-    h3{
-        text-align: center;
+
+
+.titulo-proyecto {
+    padding: 0rem 2rem;
+
+    h3 {
+        font-size: 2.4rem;
+        text-align: left;
         margin-bottom: 0;
         font-weight: 600;
-    
-        a{
+        color: black !important;
+
+        a {
             color: rgba(0, 0, 0, 0.856);
-           
+
         }
-      
+
     }
 
 }
 
-.contenedor-ver{
-    margin: 2rem 0;
-    text-align: center;
-    a{
-        
-        color: rgba(0, 0, 0, 0.856);
-        border-bottom: 2px solid rgb(7, 7, 7);
+// .contenedor-ver{
+//     padding: 1.5rem 0;
+//     border-bottom-right-radius: 20px;
+//     height: 100%;
+//     text-align: center;
+//     a{ 
 
-        padding: 1rem;
-        font-size: 14px;
-        &:hover{
-            color: white;
-            background-color: rgb(7, 7, 7);
-       
-            transition: background .3s ease-in-out;
-        }
-     
-    }
-  
-   
-    @include m.tablet{
-        padding: 1.2rem;
-    }
+//         color: white;
+//         font-size: 14px;
+//     }
+
+
+// }
+
+.contenedor-ver {
+    background-color: rgba(5, 0, 5, 0.918);
+
 }
 
-.texto-proyecto{
-    padding: .3rem;
+.texto-proyecto {
+    padding: 0rem 2rem;
+
+
     height: 100px;
     overflow: hidden;
-    p{
+
+    p {
         font-size: 11px;
-      
-        text-align: center;
-        padding: 0 1rem;
-        @include m.desktop{
-            padding: 0 1rem;
+        margin: 0;
+
+        text-align: left;
+
+        @include m.desktop {
             font-size: 15px;
-            padding: 0 1rem;
-            font-size:13px;
+
+            font-size: 13px;
         }
-     
+
     }
 }
 
-.container-descripcionbtn{
-    margin: 1rem 0;
-   
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container-descripcionbtn {
 
-    .descripcion-button{
+    padding: 0 1.5rem;
+    width: 100%;
+    height: 50px;
+
+    .descripcion-button {
+        font-size: 1.2rem;
         border: none;
         background-color: transparent;
-        &:hover{
+
+        &:hover {
             cursor: pointer;
         }
     }
 }
-
-
-.linea-divisora{
-    width: 100%;
-    text-align: center;
-
-
-    border: .5px solid rgba(0, 0, 0, 0.332);
-    
+.container {
+  position: relative;
+  background: #2c3e50;
+  height: 20vh;
 }
+
