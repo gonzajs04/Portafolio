@@ -1,75 +1,119 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
-.contenedor-form{
-    height: 93.5%;
-    position: absolute;
-    width: 100%;
-    margin: 0 auto;
-  background-color: #000000a7;
-
+.contact{
+    background-color: white;
+    padding: 2rem 0;
+    -webkit-box-shadow: 0px 1px 5px 0px rgb(167, 167, 167);
+            -moz-box-shadow: 0px 1px 5px 0px rgb(167, 167, 167);
+          box-shadow: 0px 1px 5px 0px rgb(167, 167, 167);
+}
+.contact h2{
+    font-size: 3rem;
+    color: var(--rosaFuerte);
+    text-align: center;
 }
 
-.form-contacto{
+.form{
+    max-width: 300px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    height: 100%;
-    width: 80%;
-    font-weight: 600;
 
-    
-    label{
-        display: block;
-        font-family: v.$fuentePrincipal;
-        margin: .5rem 0;
-    }
-    input:not([type="submit"]){
-        width: 100%;
-        height: 30px;
-        padding: 10px 10px;
-    }
-    input[type="submit"]{
-        display: block;
-        background-color: transparent;
-        border: 2px solid rgb(53, 151, 237);
-        outline: none;
-        padding: 1rem;
-        margin: 2rem 0;
-        color:white;
-        font-weight: 700;
-        &:hover{
-           background-color: rgb(53, 151, 237);
-           padding: 1.2rem;
-            cursor: pointer;
-            transition: all .5s ease;
-        }
-       
-    }
-    input, textarea,select{
-        color: white;
-        background-color: black;
-        border: 1px solid rgb(53, 151, 237);
-        border-radius: 3px;
-        outline: 0;
-    }
-    select{
-        width: 100%;
-        height: 35px;
-    }
-    textarea{
-    width: 100%;
-    }
-    fieldset, legend{
-        color: rgb(217, 228, 240);
-        font-size: 19px;
-    }
+    place-items: center;
+    column-gap: 3rem;
+    row-gap: 2rem;
 }
 
-.imagen-contacto{
-    background-image: url('/build/img/imagen-contacto.webp');
-    height: 900px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+@media(min-width:1024px){
+    .form{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 600px;
+    }
+
+}
+
+.form div{
+    width: 100%;
+}
+.container-subject{
+    grid-column: 1/3;
+}
+.container-msg{
+    grid-column: 1/3;
+}
+.container-msg textarea{
+    width: 100%;
+}
+.form label{
+    display: block;
+    margin: .6rem 0;
+    color: black;
+}
+sup{
+    color: red;
+}
+.form input:not([type="submit"]){
+    width: 100%;
+    height: 46px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
+    box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+.form select{
+    width: 100%;
+    height: 46px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
+    box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
+    padding: 0 1rem;
+    font-size: 1rem;
+    background-color: transparent;
+}
+.form input:not([type="submit"]):hover{
+    background-color: #0075fc2d
+}
+
+.container-submit{
+    grid-column: 1/3;
+    text-align: center;
+}
+
+.form input[type="submit"]{
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: .5s all;
+    width: 220px;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.801);
+    border: none;
+}
+
+.form input[type="submit"]:hover{
+    background-color: black;
+    cursor: pointer;
+
+}
+
+textarea{
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
+    box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
+    border: none;
+    outline: none;
+
 }

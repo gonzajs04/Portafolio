@@ -86,7 +86,7 @@ $proyectos = [
                             </div>
                         </div>
                         <p>
-                           Abajo podas encontrar mi experiencia en el mundo del Desarrollo Web. Si deseas contactarme, rellena el <strong><a href="contacto.html">FORMULARIO</a></strong> haciendo click. <br>
+                           Abajo podas encontrar mi experiencia en el mundo del Desarrollo Web. Si deseas contactarme, rellena el <strong>FORMULARIO</strong> al final de la pagina. <br>
 
                             <br>
                             Gonzalo Hernandez.
@@ -168,5 +168,43 @@ $proyectos = [
 
 </section>
 
+<section class="contact">
+        <h2>Contact</h2>
+
+        <div class="container-form">
+            <form action="" class="form">
+                <div class="container-name">
+                    <label for="name">First name <sup>*</sup></label>
+                    <input type="text" placeholder="Your name" name="name" id="">
+                </div>
+     
+
+                <div class="container-email">
+                    <label for="name">Email <sup>*</sup></label>
+                    <input type="text" name="name" id="" placeholder="e.g. example@mail.com">
+                </div>
+              
+
+                <div class="container-subject">
+                    <label for="name">Subject</label>
+                    <input type="text" name="name" id="" placeholder="e.g. Support">
+                </div>
+                
+                <div class="container-msg">
+                    <label for="">Your message</label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message here"></textarea>
+                </div>
+              
+
+                <div class="container-submit">
+                    <input type="submit" value="Submit">
+                </div>
+
+
+            </form>
+        </div>
+
+        
+    </section>
 
 <?php incluirTemplate('footer') ?>

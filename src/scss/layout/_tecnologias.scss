@@ -1,4 +1,4 @@
-// @use '../base/mixins' as m;
+ @use '../base/mixins' as m;
 // .tecnologias{
 
   
@@ -184,18 +184,47 @@
 // }
 
 .skills{
-    display: grid;
-    row-gap: 2rem;
-    place-items: left;
-    place-content: center;
-    grid-template-columns: repeat(6,1fr);
-    column-gap: -4rem;
-    max-width: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 0;
+    @include m.tablet{
+  
+        display: grid;
+        column-gap: -4rem;
+        place-items: center;
+        place-content: center;
+        grid-template-columns: repeat(6,1fr);
+        row-gap: 2rem;
+    }
+
+    @include m.desktop{
+        display: grid;
+        place-items: center;
+ 
+
+    }
+    @include m.desktopXL{
+       
+            display: grid;
+            place-items: left;
+     
+    
+               max-width: 600px;
+    }
 }
+
 .logo{
     width: 48px;
     display: flex;
     align-items: center;
+    margin: 1rem .5rem;
+
+    @include m.tablet{
+        margin:0
+    }
 
 }
 
