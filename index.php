@@ -168,7 +168,7 @@ $proyectos = [
 
 </section>
 
-<section class="contact">
+<section class="contact" id="contact">
         <h2>Contact</h2>
 
         <div class="container-form">

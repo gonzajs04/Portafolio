@@ -1,79 +1,100 @@
-@use '../base/variables' as v;
-@use '../base/mixins' as m;
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
 
-body{
-    &.dark-mode{
-        .close{
-            color: black;
-            text-shadow: .5px .5px 4px rgba(255, 255, 255, 0.923);
-        }
-        .btn-dark{
-            color: black;
-            text-shadow: .1px .5px 4px rgba(255, 255, 255, 0.923);
-            &:hover{
-                color: white;
-            }
-        }
-      
-        .tecnologias{
-            background: rgb(18, 18, 18);
-            h2{
-                color: white;
-            }
-     
-            background: rgb(18, 18, 18);
-        }
-        .contenedor-vermas{
-            a{
-                color: rgb(17, 17, 17);
-                border-color: white;
-            }
-        }
-
-        .tecnologias{
-                -webkit-box-shadow: 1px 13px 22px -8px rgba(176,176,176,1);
-                -moz-box-shadow: 1px 13px 22px -8px rgba(176,176,176,1);
-                box-shadow: 1px 13px 22px -8px rgba(176,176,176,1);
-                a{
-                    color: white;
-                }
-        }
-
-        
-     .proyectos{
-        -webkit-box-shadow: 1px 13px 22px -8px rgb(23, 23, 23);
-        -moz-box-shadow: 1px 13px 22px -8px rgb(23, 23, 23);
-        box-shadow:  1px 13px 22px -8px rgb(23, 23, 23);
-        background-color:rgb(19, 19, 19);
-       
-     
-        h3,p{
-            color: white;
-        }
-        .linea-divisora{
-            border-color: rgba(38, 38, 38, 0.771);
-        }
-        a{
-            filter: invert(100%);
-        }
-        h2{
-            color: white;
-        }
-
-        .proyecto{
-            -webkit-box-shadow: 0px 0px 11px -3px rgba(26,26,26,1);
--moz-box-shadow: 0px 0px 11px -3px rgba(26,26,26,1);
-box-shadow: 0px 0px 11px -3px rgba(26,26,26,1);
-            
-        }
-     } 
-
-     .footer{
-        box-shadow: 0 0 5px 0 #b0b0b0;
-        background: black;
-     }
-     .descripcion-button{
-        color: white;
-     }
+body {
+  &.dark-mode {
+    .close {
+      color: black;
+      text-shadow: 0.5px 0.5px 4px rgba(255, 255, 255, 0.923);
     }
+    .btn-dark {
+      color: black;
+      text-shadow: 0.1px 0.5px 4px rgba(255, 255, 255, 0.923);
+      &:hover {
+        color: white;
+      }
+    }
+
+    .tecnologias {
+      background: rgb(18, 18, 18);
+      h2 {
+        color: white;
+      }
+
+      background: rgb(18, 18, 18);
+    }
+    .contenedor-vermas {
+      a {
+        color: rgb(17, 17, 17);
+        border-color: white;
+      }
+    }
+
+    .tecnologias {
+      -webkit-box-shadow: 1px 13px 22px -8px rgba(176, 176, 176, 1);
+      -moz-box-shadow: 1px 13px 22px -8px rgba(176, 176, 176, 1);
+      box-shadow: 1px 13px 22px -8px rgba(176, 176, 176, 1);
+      a {
+        color: white;
+      }
+    }
+
+    .proyectos {
+      -webkit-box-shadow: 1px 13px 22px -8px rgb(23, 23, 23);
+      -moz-box-shadow: 1px 13px 22px -8px rgb(23, 23, 23);
+      box-shadow: 1px 13px 22px -8px rgb(23, 23, 23);
+      background-color: rgb(19, 19, 19);
+
+      h3,
+      p {
+        color: white;
+      }
+      .linea-divisora {
+        border-color: rgba(38, 38, 38, 0.771);
+      }
+      a {
+      }
+      h2 {
+        color: white;
+      }
+
+      .proyecto {
+        -webkit-box-shadow: 0px 0px 3px .2px rgb(0, 64, 148);
+        -moz-box-shadow: 0px 0px 3px .2px rgb(0, 64, 148);
+        box-shadow: 0px 0px 3px .2px rgb(0, 64, 148);
+        background-color: rgb(17, 17, 17);
+        h3{
+            color: white !important;
+        }
+        p{
+            color: rgb(236, 236, 236);
+        }
+      }
+    }
+
+    .contact{
+        background-color: rgb(12, 12, 12);
+    }
+    .contact h2{
+        color: white;
+    }
+    .contact label{
+        color: white;
+    }
+    .contact input:not([type="submit"]){
+        background-color: black;
+        box-shadow: none !important;
+    }
+    .contact textarea{
+        background-color: black;
+        box-shadow: none;
+    }
+    .footer {
+      box-shadow: 0 0 5px 0 #b0b0b0;
+      background: black;
+    }
+    .descripcion-button {
+      color: white;
+    }
+  }
 }

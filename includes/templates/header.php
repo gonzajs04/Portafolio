@@ -68,7 +68,7 @@
                 <li><a class = "smooth " href="#tecnologias">Tecnologias</a></li>
                 <li><a href="#proyectos" class="smooth">Proyectos</a></li>
 
-                <li><a href="contacto.php">Contacto</a></li>
+                <li><a href="#contact" class="smooth">Contacto</a></li>
                 <li><a href="https://www.linkedin.com/in/gonza-hernandez/">Linkedin</a></li>
                 <li><a href="https://github.com/gonzajs04?tab=repositories">GITHUB</a></li>
                 <li><a href="CV - Gonzalo Hernandez.pdf" download="CV - Gonzalo Hernandez">Curriculum</a></li>

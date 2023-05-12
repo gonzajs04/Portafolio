@@ -35,20 +35,18 @@ function enviarMail(){
             e.preventDefault();
             let apellido = '';
             const email = document.querySelector('.form-email').value;
-            console.log("🚀 ~ file: app.js:38 ~ btnEnvio.addEventListener ~ email:", email)
             const nombre = document.querySelector('.form-nombre').value;
-            console.log("🚀 ~ file: app.js:40 ~ btnEnvio.addEventListener ~ nombre:", nombre)
            
             const mensaje = document.querySelector('.form-descripcion').value;
-            console.log("🚀 ~ file: app.js:43 ~ btnEnvio.addEventListener ~ mensaje:", mensaje)
 
-            if(email!='' ||nombre!='' || mensaje!=''){
-                console.log('asdasd')
-            window.location.href = `mailto:hernandezgonzalo5845@gmail.com?subject=Contactoparapropuesta&body=Nombre%3A${nombre}%0AApellido%3A%20${apellido}%0AMail%3A${email}%0AMensaje%3A${mensaje}`;
+            if(email!='' && nombre!=''){
+                 window.location.href = `mailto:hernandezgonzalo5845@gmail.com?subject=Contactoparapropuesta&body=Nombre%3A${nombre}%0AApellido%3A%20${apellido}%0AMail%3A${email}%0AMensaje%3A${mensaje}`;
 
-            redireccionarIndex();
+                 redireccionarIndex();
+                 return;
   
             }
+            return;
         
 
         });
