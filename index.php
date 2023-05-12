@@ -175,13 +175,13 @@ $proyectos = [
             <form action="" class="form">
                 <div class="container-name">
                     <label for="name">First name <sup>*</sup></label>
-                    <input type="text" placeholder="Your name" name="name" id="">
+                    <input type="text" placeholder="Your name" name="name" id="" class="form-nombre">
                 </div>
      
 
                 <div class="container-email">
                     <label for="name">Email <sup>*</sup></label>
-                    <input type="text" name="name" id="" placeholder="e.g. example@mail.com">
+                    <input type="text" name="name" id="" placeholder="e.g. example@mail.com" class="form-email">
                 </div>
               
 
@@ -192,12 +192,12 @@ $proyectos = [
                 
                 <div class="container-msg">
                     <label for="">Your message</label>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message here"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message here" class="form-descripcion"></textarea>
                 </div>
               
 
                 <div class="container-submit">
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" id="enviar-correo">
                 </div>
 
 
