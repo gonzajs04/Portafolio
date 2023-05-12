@@ -49,35 +49,26 @@
     display: block;
     margin: .6rem 0;
     color: black;
+    font-family: v.$fuentePrincipal;
 }
 sup{
     color: red;
+    font-family: v.$fuentePrincipal;
 }
 .form input:not([type="submit"]){
     width: 100%;
     height: 46px;
     border-radius: 10px;
+    font-family: v.$fuentePrincipal;
     outline: none;
     border: none;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
     -moz-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
     box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
     padding: 0 1rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
-.form select{
-    width: 100%;
-    height: 46px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
-    box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
-    padding: 0 1rem;
-    font-size: 1rem;
-    background-color: transparent;
-}
+
 .form input:not([type="submit"]):hover{
     background-color: #0075fc2d
 }
@@ -89,14 +80,16 @@ sup{
 
 .form input[type="submit"]{
     padding: 1rem 1rem;
+    font-family: v.$fuentePrincipal;
     border-radius: 10px;
     text-decoration: none;
+    letter-spacing: 1px;
     color: white;
     font-size: 1.5rem;
     font-weight: 600;
     transition: .5s all;
     width: 220px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     background-color: rgba(0, 0, 0, 0.801);
     border: none;
 }
@@ -108,7 +101,8 @@ sup{
 }
 
 textarea{
-    font-size: 1rem;
+    font-size: 1.3rem;
+    font-family: v.$fuentePrincipal;
     padding: 1rem 1rem;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
     -moz-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);

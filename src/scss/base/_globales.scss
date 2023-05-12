@@ -21,6 +21,9 @@ p {
     color: v.$negro;
     font-size: 2rem;
 }
+label, textarea{
+    font-family: v.$fuentePrincipal;
+}
 .contenedor {
     width: 95%;
     max-width: 120rem;
