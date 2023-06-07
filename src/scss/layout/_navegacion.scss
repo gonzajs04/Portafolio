@@ -16,8 +16,9 @@ ul{
 
 .contenido-navegacion{
     position: fixed;
-    z-index: 10000;
     width: 100%;
+    z-index: 10000;
+
     height: 100%;
 
     @include m.desktop{
@@ -48,6 +49,8 @@ ul{
             visibility: visible;
             opacity: 1;
              max-width: 100%;
+             z-index: 10000;
+
              transition: all .5s ease-in-out;
           }
     }

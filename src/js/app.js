@@ -14,6 +14,8 @@ function iniciarApp(){
 
     const botonMenu = document.querySelector('.toggle');
     const navegacion = document.querySelector('.navegacion');
+    const contNav = document.querySelector('.contenido-navegacion');
+
 
     if(!(botonMenu ==null)){
    //MAL, PASAR A FUNCION A PARTE LLAMADA ABRIR MENU DE NAV
@@ -21,6 +23,11 @@ function iniciarApp(){
        
         navegacion.classList.add('visible');
         botonMenu.classList.add('novisible');
+        contNav.style.zIndex="100000";
+
+        
+       
+
     })
 
     enviarMail()
@@ -58,8 +65,6 @@ function redireccionarIndex(){
     window.location.href='/';
 }
 
-
-
   //MAL, HACER EN FUNCION APARTE LALMADA CERRAR NAVEGACION
 
 
@@ -70,6 +75,8 @@ function redireccionarIndex(){
 
         navegacion.classList.remove('visible');
         botonMenu.classList.remove('novisible');
+        contNav.style.zIndex="1000";
+
 
         })
     }
