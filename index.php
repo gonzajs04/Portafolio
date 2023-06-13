@@ -44,7 +44,8 @@ $proyectos = [
     MYSQL. Este proyecto es una pagina de peliculas con mi propia base de datos, la cual podes, BUSCAR PELICULAS, VER SUS TRAILERS, FILTRAR POR GENEROS, Y POSEE UN ADMINISTRADOR DE PELICULAS PARA: Agregar peliculas, Actualizarlas y eliminarlas ", "https://cloudmoviegh.000webhostapp.com/")),
     (new Proyecto("WeatherLike","weatherlike","Este es un proyecto el cual consumo el API de OPENWEATHER. Este proyecto permite visualizar todas las TEMPERATURAS y otras cosas de todo el mundo. Para ver la pagina, toca el link ","https://weatherlikev2.netlify.app/")),
 
-    (new Proyecto("Veterinario", "perro", "Veterinario es un Administrador de pacientes. Es mi primer proyecto hecho con REACT, TAILWIND CSS, VITE y LocalStorage. Puedes registrar los sintomas de tu mascota, editarlos o eliminar el sintoma. Puedes encontrar la pagina haciendo click ", "https://administradormascotasvite.netlify.app/"))
+    (new Proyecto("Veterinario", "perro", "Veterinario es un Administrador de pacientes. Es mi primer proyecto hecho con REACT, TAILWIND CSS, VITE y LocalStorage. Puedes registrar los sintomas de tu mascota, editarlos o eliminar el sintoma. Puedes encontrar la pagina haciendo click ", "https://administradormascotasvite.netlify.app/")),
+    (new Proyecto("BlueBerry", "blueberry", "Blueberry es una plataforma que ofrece las mejores joyas de Inglaterra. Desarrollada con React, Sass y Vite, brinda una experiencia visual atractiva y funcional. La integración de  permite una navegación fluida entre secciones. Descubre nuestras exquisitas joyas en un solo lugar. ¡Bienvenido a Blueberry! ", "https://blueberryj.netlify.app/"))
 ]
 ?>
 
@@ -62,10 +63,12 @@ $proyectos = [
                     <div class="sobremi-texto" data-aos="fade-up">
                         <h2 class="animate__animated animate__bounce">Sobre mi</h2>
                         <hr>
-                        <p>¡Hola! Soy Gonzalo Hernández y tengo 19 años.
-                            Soy técnico en computación orientado a la programación.
-                            Hace 3 meses incursioné en el mundo del desarrollo web y mi meta es ser un desarrollador FULL STACK MERN o PHP.
-                            Suelo adentrarme a nuevos desafíos para aprender, ponerle mucha pasión y la dedicación que requiera.
+                        <p>¡Hola! Soy Gonzalo Hernández y tengo 20 años.
+                            Soy técnico en computación orientado a la programación, cursando la carrera de Ingeniera en Informatica.
+                            Hace 1 año incursioné en el mundo del desarrollo web. Actualmente desarrollo webs como FULLSTACK PHP con MYSQL como gestor de base de datos.
+                            Asimismo, desarrollo Landing Pages con React y CSS(Sass o TailwindCSS).
+
+                            Suelo adentrarme a nuevos desafíos para aprender, ponerle mucha pasión y la dedicación que requiera hasta llegar a la meta deseada.
 
                          
                         </p>
@@ -169,29 +172,29 @@ $proyectos = [
 </section>
 
 <section class="contact" id="contact">
-        <h2>Contact</h2>
+        <h2>Contacto</h2>
 
         <div class="container-form">
             <form action="" class="form">
                 <div class="container-name">
-                    <label for="name">First name <sup>*</sup></label>
+                    <label for="name">Nombre <sup>*</sup></label>
                     <input type="text" placeholder="Your name" name="name" id="" class="form-nombre">
                 </div>
      
 
                 <div class="container-email">
-                    <label for="name">Email <sup>*</sup></label>
+                    <label for="name">Mail <sup>*</sup></label>
                     <input type="text" name="name" id="" placeholder="e.g. example@mail.com" class="form-email">
                 </div>
               
 
                 <div class="container-subject">
-                    <label for="name">Subject</label>
+                    <label for="name">Tema</label>
                     <input type="text" name="name" id="" placeholder="e.g. Support">
                 </div>
                 
                 <div class="container-msg">
-                    <label for="">Your message</label>
+                    <label for="">Tu mensaje</label>
                     <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message here" class="form-descripcion"></textarea>
                 </div>
               
