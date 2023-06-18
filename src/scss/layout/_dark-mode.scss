@@ -72,6 +72,8 @@ body {
       }
     }
 
+
+ 
     .contact{
         background-color: rgb(12, 12, 12);
     }
@@ -84,10 +86,12 @@ body {
     .contact input:not([type="submit"]){
         background-color: black;
         box-shadow: none !important;
+        color: white;
     }
     .contact textarea{
         background-color: black;
         box-shadow: none;
+        color: white;
     }
     .footer {
       box-shadow: 0 0 5px 0 #b0b0b0;
