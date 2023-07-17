@@ -47,12 +47,14 @@
 
         <?php } ?>
 
-        <div class="contenido-navegacion">
-
-            <button class="toggle" data-aos="fade-down">
+        <button class="toggle" data-aos="fade-down">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
+
+        <div class="contenido-navegacion">
+
+        
 
             <nav class="navegacion">
                 <div class="contenedor-botones">

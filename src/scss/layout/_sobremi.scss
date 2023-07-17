@@ -88,6 +88,8 @@ padding: 5rem 3rem;
             color: white;
         }
     }
+ 
+   
 }
 ul{
     color: white;
@@ -141,4 +143,56 @@ ul{
         transform: scale(2);
         transform: translateX(0%) translateY(0%);
     }
+}
+
+
+.sobremi-texto{
+    overflow: hidden;
+
+    p {
+        overflow: hidden;
+        max-height: 100px;
+        height: auto;
+        transition: all .5s ease-in-out;
+    
+        
+        &.desplegado {
+          overflow: visible;
+          max-height: 800px;
+         }
+  
+          @include m.telefono{
+              max-height: auto;
+          }
+        
+      }
+
+    @include m.telefono{
+        p{
+            max-height: 100%;
+        }
+        
+    }
+   
+}
+
+
+
+
+
+
+.vermas{
+    position: relative;
+    display: block;
+    height: 60px;
+    z-index: 999999999;
+    p{
+        top: 0;
+   
+    }
+    @include m.telefono{
+        display: none;
+        
+    }
+
 }

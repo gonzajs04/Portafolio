@@ -193,7 +193,7 @@
     @include m.tablet{
   
         display: grid;
-        column-gap: -4rem;
+      
         place-items: center;
         place-content: center;
         grid-template-columns: repeat(6,1fr);

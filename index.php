@@ -46,7 +46,9 @@ $proyectos = [
 
     (new Proyecto("Veterinario", "perro", "Veterinario es un Administrador de pacientes. Es mi primer proyecto hecho con REACT, TAILWIND CSS, VITE y LocalStorage. Puedes registrar los sintomas de tu mascota, editarlos o eliminar el sintoma. Puedes encontrar la pagina haciendo click ", "https://administradormascotasvite.netlify.app/")),
     (new Proyecto("BlueeBerry", "blueberry", "Blueeberry es una plataforma que ofrece las mejores joyas de Inglaterra. Desarrollada con React, Sass y Vite, brinda una experiencia visual atractiva y funcional. La integración de  permite una navegación fluida entre secciones. Descubre nuestras exquisitas joyas en un solo lugar. ¡Bienvenido a Blueberry! ", "https://blueberryj.netlify.app/")),
-    (new Proyecto("PacificOcean", "pacificocean", "Diseño y desarrollo web de Pacific Ocean. Esta pagina fue desarrollada con React, Vite, Sass, JavaScript. Ayuda a los animales marinos que tanto nos necesitan, de la mano que ellos no tienen y la voz que no pueden reproducir. Se consumio una API de noticias la cual debido a no tener permisos, no sera mostrada. Se utilizo POSTCSS para minificacion de css y Terser para minificacion de JavaScript. Se utilizo TinyPng para comprimir tamaño de las imagenes. Se utilizo la libreria I18Next para sistema de traduccion de Español a Ingles. Lazy Load y suspense para cargar correctamente la pagina y sus imagenes. ","https://pacificocean.netlify.app/"))
+    (new Proyecto("PacificOcean", "pacificocean", "Diseño y desarrollo web de Pacific Ocean. Esta pagina fue desarrollada con React, Vite, Sass, JavaScript. Ayuda a los animales marinos que tanto nos necesitan, de la mano que ellos no tienen y la voz que no pueden reproducir. Se consumio una API de noticias la cual debido a no tener permisos, no sera mostrada. Se utilizo POSTCSS para minificacion de css y Terser para minificacion de JavaScript. Se utilizo TinyPng para comprimir tamaño de las imagenes. Se utilizo la libreria I18Next para sistema de traduccion de Español a Ingles. Lazy Load y suspense para cargar correctamente la pagina y sus imagenes. ","https://pacificocean.netlify.app/")),
+
+    (new Proyecto("Hupa Hamburguesas", "hupa", "Diseño y desarrollo web de Hupa Hamburguesas. Esta pagina fue desarrollada con React, Vite, Sass, JavaScript. Se utilizo POSTCSS para minificacion de css y Terser para minificacion de JavaScript. Se utilizo TinyPng para comprimir tamaño de las imagenes.Se utilizo Lazy Load para cargar correctamente la pagina y sus imagenes. Este diseño es original y creado por mi del emprendimiento HUPA HAMBURGUESAS que se encuentra en Argentina - Buenos Aires ","https://hupahamburguesas.netlify.app/"))
 ]
 ?>
 
@@ -64,8 +66,8 @@ $proyectos = [
                     <div class="sobremi-texto" data-aos="fade-up">
                         <h2 class="animate__animated animate__bounce">Sobre mi</h2>
                         <hr>
-                        <p>¡Hola! Soy Gonzalo Hernández y tengo 20 años.
-                            Soy técnico en computación orientado a la programación, cursando la carrera de Ingeniera en Informatica.
+                        <p class="sobremi-desc">¡Hola! Soy Gonzalo Hernández y tengo 20 años.
+                            Soy técnico en computación y desarrollador web, cursando la carrera de Ingeniera en Informatica.
                             Hace 1 año incursioné en el mundo del desarrollo web. Actualmente desarrollo webs como FULLSTACK PHP con MYSQL como gestor de base de datos.
                             Asimismo, desarrollo Landing Pages con React y CSS(Sass o TailwindCSS).
 
@@ -73,6 +75,12 @@ $proyectos = [
 
                          
                         </p>
+
+                        <div class="vermas">
+                        <p>Ver mas</p>
+                    </div>
+
+                      
                         <div class="container-skills">
                             <h2> Skills</h2>
                             <div class="skills">
@@ -97,6 +105,8 @@ $proyectos = [
                         </p>
 
                     </div>
+
+                  
 
                     <div class="sobremi-img">
                         <picture>
@@ -179,24 +189,21 @@ $proyectos = [
             <form action="" class="form">
                 <div class="container-name">
                     <label for="name">Nombre <sup>*</sup></label>
-                    <input type="text" placeholder="Your name" name="name" id="" class="form-nombre">
+                    <input type="text" placeholder="Tu nombre" name="name" id="name" class="form-nombre">
                 </div>
      
 
-                <div class="container-email">
-                    <label for="name">Mail <sup>*</sup></label>
-                    <input type="text" name="name" id="" placeholder="e.g. example@mail.com" class="form-email">
-                </div>
+           
               
 
                 <div class="container-subject">
-                    <label for="name">Tema</label>
-                    <input type="text" name="name" id="" placeholder="e.g. Support">
+                    <label for="tema">Tema</label>
+                    <input class="subject-input" type="text" name="tema" id="tema" placeholder="e.g. Soporte">
                 </div>
                 
                 <div class="container-msg">
-                    <label for="">Tu mensaje</label>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message here" class="form-descripcion"></textarea>
+                    <label for="msg">Tu mensaje</label>
+                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Escribí aca tu mensaje" class="form-descripcion"></textarea>
                 </div>
               
 

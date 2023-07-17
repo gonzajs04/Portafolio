@@ -17,7 +17,6 @@ ul{
 .contenido-navegacion{
     position: fixed;
     width: 100%;
-    z-index: 10000;
 
     height: 100%;
 
@@ -38,6 +37,7 @@ ul{
         align-items: center;
         justify-content: center;
         opacity: 0;
+        z-index: 100;
         a{
             color: white;
             font-weight: 600;
@@ -70,7 +70,8 @@ ul{
 }
 
 .toggle{
-    position: absolute;
+    z-index: 10000;
+    position: fixed;
     top: 5%;
     left: 3%;
     background-color: transparent;

@@ -40,14 +40,15 @@ function iniciarApp() {
         if (btnEnvio != null) {
             btnEnvio.addEventListener('click', (e) => {
                 e.preventDefault();
-                let apellido = '';
-                const email = document.querySelector('.form-email').value;
+             
                 const nombre = document.querySelector('.form-nombre').value;
-
                 const mensaje = document.querySelector('.form-descripcion').value;
+                const subject = document.querySelector('.subject-input').value;
+                const subjectEncoded = encodeURIComponent(subject);
+                console.log(subjectEncoded)
 
-                if (email != '' && nombre != '') {
-                    window.location.href = `mailto:hernandezgonzalo5845@gmail.com?subject=Contactoparapropuesta&body=Nombre%3A${nombre}%0AApellido%3A%20${apellido}%0AMail%3A${email}%0AMensaje%3A${mensaje}`;
+                if ( nombre != '' && subject != '') {
+                     window.location.href = `mailto:hernandezgonzalo5845@gmail.com?subject=${subjectEncoded}&body=Nombre%3A${nombre}%0A${mensaje}`;
 
                     redireccionarIndex();
                     return;
@@ -75,7 +76,8 @@ function iniciarApp() {
 
             navegacion.classList.remove('visible');
             botonMenu.classList.remove('novisible');
-            contNav.style.zIndex = "1000";
+            contNav.style.zIndex = "0";
+
 
 
         })
@@ -121,9 +123,30 @@ function iniciarApp() {
     recorrerProyectos();
 
 
+    desplegarSobreMi();
+
+
 
 }
 
+function desplegarSobreMi(){
+    const textVerMas = document.querySelector('.vermas p');
+    if(textVerMas){
+        textVerMas.addEventListener('click',()=>{
+           const textSobreMi = document.querySelector('.sobremi-desc')
+            if(textSobreMi.classList.contains('desplegado')){
+                textSobreMi.classList.remove('desplegado')
+                textVerMas.textContent = "Ver mas";
+                return;
+            }
+            textSobreMi.classList.add('desplegado')
+            textVerMas.textContent = "Ver menos";
+
+
+            return;
+        })
+    }
+}
 
 
 function recorrerProyectos() {
