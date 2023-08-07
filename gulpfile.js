@@ -61,6 +61,8 @@ function watchArchivos() {
     watch(paths.imagenes, versionWebp);
 }
 
+//npm run dev
+
 exports.css = css;
 exports.watchArchivos = watchArchivos;
 exports.default = parallel(css, javascript, imagenes, versionWebp, watchArchivos); 

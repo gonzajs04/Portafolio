@@ -10,16 +10,18 @@ include __DIR__ . '/classes/Lenguaje.php';
                                        new Lenguaje("React","minireact.png","minireact.webp","","FRONT"),
                                        new Lenguaje("Sass","logo_sass.png","logo_sass.webp","","FRONT"),
                                        new Lenguaje("Bootstrap","miniboot.png","miniboot.webp","","FRONT"),
+                                       new Lenguaje("TailwindCSS","tailwindcss.png","tailwindcss.webp","","FRONT"),
                                        new Lenguaje("NodeJS","logo_node.png","logo_node.webp","","BACK"),
-                                       new Lenguaje("GulpJS","logo_gulp.png","logo_gulp.webp","","BACK"),
                                        new Lenguaje("PHP","miniphp.png","miniphp.png","","BACK"),
+                                       new Lenguaje("GulpJS","logo_gulp.png","logo_gulp.webp","","BACK"),
                                        new Lenguaje("GIT","logo-git.png","logo-git.webp","","CONTROL"),
                                        new Lenguaje("GITHUB","logo-github.png","logo-github.webp","","SERVER"),
                                        new Lenguaje("MYSQL","MYSQL.png","MYSQL.webp","","DATABASE"),
+                                       new Lenguaje("PostgreSQL","postgre.png","postgre.webp","","DATABASE"),
                                        new Lenguaje("NPM","npm-logo.png","npm-logo.webp","","GESTOR"),
                                        new Lenguaje("COMPOSER","composer-logo.png","composer-logo.webp","","GESTOR"),
                                        new Lenguaje("JAVA","minijava.png","minijava.webp","","BACK"),
-                                       new Lenguaje("C++","minic.png","minic.webp","","BACK")
+                                       new Lenguaje("C++","minic.png","minic.webp","","BACK"),
                                     
                          
 ];
