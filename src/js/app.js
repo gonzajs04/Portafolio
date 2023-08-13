@@ -124,7 +124,7 @@ function iniciarApp() {
 
 
     desplegarSobreMi();
-
+    desplegarEstudios();
 
 
 }
@@ -145,6 +145,27 @@ function desplegarSobreMi(){
 
             return;
         })
+    }
+}
+
+function desplegarEstudios(){
+    const textVerMas = document.querySelectorAll('.event .vermas p');
+    if(textVerMas){   
+      textVerMas.forEach(textVer =>{
+        textVer.addEventListener('click',()=>{
+           const textStudy = document.querySelector('.event-text')
+           console.log(textStudy)
+            if(textStudy.classList.contains('desplegado')){
+                
+                textStudy.classList.remove('desplegado')
+                textVer.textContent = "Ver mas";
+                return;
+            }
+            textStudy.classList.add('desplegado')
+            textVer.textContent = "Ver menos";
+            return;
+        })
+      })
     }
 }
 

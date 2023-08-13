@@ -3,27 +3,27 @@ include __DIR__ . '/classes/Proyecto.php';
 incluirTemplate('header', true);
 
 include __DIR__ . '/classes/Lenguaje.php';
+$lenguajes = [
+    new Lenguaje("HTML", "minihtml.png", "minihtml.webp", "https://developer.mozilla.org/es/docs/Web/HTML", "FRONT"),
+    new Lenguaje("CSS", "minicss.png", "minicss.webp", "", "FRONT"),
+    new Lenguaje("JavaScript", "minijs.png", "minijs.webp", "", "FRONT"),
+    new Lenguaje("React", "minireact.png", "minireact.webp", "", "FRONT"),
+    new Lenguaje("Sass", "logo_sass.png", "logo_sass.webp", "", "FRONT"),
+    new Lenguaje("Bootstrap", "miniboot.png", "miniboot.webp", "", "FRONT"),
+    new Lenguaje("TailwindCSS", "tailwindcss.png", "tailwindcss.webp", "", "FRONT"),
+    new Lenguaje("NodeJS", "logo_node.png", "logo_node.webp", "", "BACK"),
+    new Lenguaje("PHP", "miniphp.png", "miniphp.png", "", "BACK"),
+    new Lenguaje("GulpJS", "logo_gulp.png", "logo_gulp.webp", "", "BACK"),
+    new Lenguaje("GIT", "logo-git.png", "logo-git.webp", "", "CONTROL"),
+    new Lenguaje("GITHUB", "logo-github.png", "logo-github.webp", "", "SERVER"),
+    new Lenguaje("MYSQL", "MYSQL.png", "MYSQL.webp", "", "DATABASE"),
+    new Lenguaje("PostgreSQL", "postgre.png", "postgre.webp", "", "DATABASE"),
+    new Lenguaje("NPM", "npm-logo.png", "npm-logo.webp", "", "GESTOR"),
+    new Lenguaje("COMPOSER", "composer-logo.png", "composer-logo.webp", "", "GESTOR"),
+    new Lenguaje("JAVA", "minijava.png", "minijava.webp", "", "BACK"),
+    new Lenguaje("C++", "minic.png", "minic.webp", "", "BACK"),
 
-                         $lenguajes = [new Lenguaje("HTML","minihtml.png","minihtml.webp","https://developer.mozilla.org/es/docs/Web/HTML","FRONT"),
-                                       new Lenguaje("CSS","minicss.png","minicss.webp","","FRONT"),
-                                       new Lenguaje("JavaScript","minijs.png","minijs.webp","","FRONT"),
-                                       new Lenguaje("React","minireact.png","minireact.webp","","FRONT"),
-                                       new Lenguaje("Sass","logo_sass.png","logo_sass.webp","","FRONT"),
-                                       new Lenguaje("Bootstrap","miniboot.png","miniboot.webp","","FRONT"),
-                                       new Lenguaje("TailwindCSS","tailwindcss.png","tailwindcss.webp","","FRONT"),
-                                       new Lenguaje("NodeJS","logo_node.png","logo_node.webp","","BACK"),
-                                       new Lenguaje("PHP","miniphp.png","miniphp.png","","BACK"),
-                                       new Lenguaje("GulpJS","logo_gulp.png","logo_gulp.webp","","BACK"),
-                                       new Lenguaje("GIT","logo-git.png","logo-git.webp","","CONTROL"),
-                                       new Lenguaje("GITHUB","logo-github.png","logo-github.webp","","SERVER"),
-                                       new Lenguaje("MYSQL","MYSQL.png","MYSQL.webp","","DATABASE"),
-                                       new Lenguaje("PostgreSQL","postgre.png","postgre.webp","","DATABASE"),
-                                       new Lenguaje("NPM","npm-logo.png","npm-logo.webp","","GESTOR"),
-                                       new Lenguaje("COMPOSER","composer-logo.png","composer-logo.webp","","GESTOR"),
-                                       new Lenguaje("JAVA","minijava.png","minijava.webp","","BACK"),
-                                       new Lenguaje("C++","minic.png","minic.webp","","BACK"),
-                                    
-                         
+
 ];
 
 $proyectos = [
@@ -44,13 +44,13 @@ $proyectos = [
 
     (new Proyecto("CloudMovie", "cloudmovie", "Este es mi primer proyecto como FULL STACK DEVELOPER PHP, el cual consiste, del manejo de las tecnologias: HTML,CSS,SCSS,JAVASCRIPT,GULP,PHP,
     MYSQL. Este proyecto es una pagina de peliculas con mi propia base de datos, la cual podes, BUSCAR PELICULAS, VER SUS TRAILERS, FILTRAR POR GENEROS, Y POSEE UN ADMINISTRADOR DE PELICULAS PARA: Agregar peliculas, Actualizarlas y eliminarlas ", "https://cloudmoviegh.000webhostapp.com/")),
-    (new Proyecto("WeatherLike","weatherlike","Este es un proyecto el cual consumo el API de OPENWEATHER. Este proyecto permite visualizar todas las TEMPERATURAS y otras cosas de todo el mundo. Para ver la pagina, toca el link ","https://weatherlikev2.netlify.app/")),
+    (new Proyecto("WeatherLike", "weatherlike", "Este es un proyecto el cual consumo el API de OPENWEATHER. Este proyecto permite visualizar todas las TEMPERATURAS y otras cosas de todo el mundo. Para ver la pagina, toca el link ", "https://weatherlikev2.netlify.app/")),
 
     (new Proyecto("Veterinario", "perro", "Veterinario es un Administrador de pacientes. Es mi primer proyecto hecho con REACT, TAILWIND CSS, VITE y LocalStorage. Puedes registrar los sintomas de tu mascota, editarlos o eliminar el sintoma. Puedes encontrar la pagina haciendo click ", "https://administradormascotasvite.netlify.app/")),
     (new Proyecto("BlueeBerry", "blueberry", "Blueeberry es una plataforma que ofrece las mejores joyas de Inglaterra. Desarrollada con React, Sass y Vite, brinda una experiencia visual atractiva y funcional. La integración de  permite una navegación fluida entre secciones. Descubre nuestras exquisitas joyas en un solo lugar. ¡Bienvenido a Blueberry! ", "https://blueberryj.netlify.app/")),
-    (new Proyecto("PacificOcean", "pacificocean", "Diseño y desarrollo web de Pacific Ocean. Esta pagina fue desarrollada con React, Vite, Sass, JavaScript. Ayuda a los animales marinos que tanto nos necesitan, de la mano que ellos no tienen y la voz que no pueden reproducir. Se consumio una API de noticias la cual debido a no tener permisos, no sera mostrada. Se utilizo POSTCSS para minificacion de css y Terser para minificacion de JavaScript. Se utilizo TinyPng para comprimir tamaño de las imagenes. Se utilizo la libreria I18Next para sistema de traduccion de Español a Ingles. Lazy Load y suspense para cargar correctamente la pagina y sus imagenes. ","https://pacificocean.netlify.app/")),
+    (new Proyecto("PacificOcean", "pacificocean", "Diseño y desarrollo web de Pacific Ocean. Esta pagina fue desarrollada con React, Vite, Sass, JavaScript. Ayuda a los animales marinos que tanto nos necesitan, de la mano que ellos no tienen y la voz que no pueden reproducir. Se consumio una API de noticias la cual debido a no tener permisos, no sera mostrada. Se utilizo POSTCSS para minificacion de css y Terser para minificacion de JavaScript. Se utilizo TinyPng para comprimir tamaño de las imagenes. Se utilizo la libreria I18Next para sistema de traduccion de Español a Ingles. Lazy Load y suspense para cargar correctamente la pagina y sus imagenes. ", "https://pacificocean.netlify.app/")),
 
-    (new Proyecto("Hupa Hamburguesas", "hupa", "Diseño y desarrollo web de Hupa Hamburguesas. Esta pagina fue desarrollada con React, Vite, Sass, JavaScript. Se utilizo POSTCSS para minificacion de css y Terser para minificacion de JavaScript. Se utilizo TinyPng para comprimir tamaño de las imagenes.Se utilizo Lazy Load para cargar correctamente la pagina y sus imagenes. Este diseño es original y creado por mi del emprendimiento HUPA HAMBURGUESAS que se encuentra en Argentina - Buenos Aires ","https://hupahamburguesas.netlify.app/"))
+    (new Proyecto("Hupa Hamburguesas", "hupa", "Diseño y desarrollo web de Hupa Hamburguesas. Esta pagina fue desarrollada con React, Vite, Sass, JavaScript. Se utilizo POSTCSS para minificacion de css y Terser para minificacion de JavaScript. Se utilizo TinyPng para comprimir tamaño de las imagenes.Se utilizo Lazy Load para cargar correctamente la pagina y sus imagenes. Este diseño es original y creado por mi del emprendimiento HUPA HAMBURGUESAS que se encuentra en Argentina - Buenos Aires ", "https://hupahamburguesas.netlify.app/"))
 ]
 ?>
 
@@ -75,24 +75,24 @@ $proyectos = [
 
                             Suelo adentrarme a nuevos desafíos para aprender, ponerle mucha pasión y la dedicación que requiera hasta llegar a la meta deseada.
 
-                         
+
                         </p>
 
                         <div class="vermas">
-                        <p>Ver mas</p>
-                    </div>
+                            <p>Ver mas</p>
+                        </div>
 
-                      
+
                         <div class="container-skills">
                             <h2> Skills</h2>
                             <div class="skills">
-                                <?php foreach($lenguajes as $lenguaje){?>
+                                <?php foreach ($lenguajes as $lenguaje) { ?>
 
-                                    <div class="logo <?php echo $lenguaje->getNombre() == 'GulpJS' ? 'GulpJS' : '';?>">
+                                    <div class="logo <?php echo $lenguaje->getNombre() == 'GulpJS' ? 'GulpJS' : ''; ?>">
                                         <picture>
-                                       
-                                            <source srcset="build/img/<?php echo $lenguaje->getImagenComprimida()?>" type="image/webp">
-                                            <img loading ="lazy" src="build/img/<?php echo $lenguaje->getImagen()?>" alt="Logo">
+
+                                            <source srcset="build/img/<?php echo $lenguaje->getImagenComprimida() ?>" type="image/webp">
+                                            <img loading="lazy" src="build/img/<?php echo $lenguaje->getImagen() ?>" alt="Logo">
                                         </picture>
                                     </div>
 
@@ -100,7 +100,7 @@ $proyectos = [
                             </div>
                         </div>
                         <p>
-                           Abajo podas encontrar mi experiencia en el mundo del Desarrollo Web. Si deseas contactarme, rellena el <strong>FORMULARIO</strong> al final de la pagina. <br>
+                            Abajo podas encontrar mi experiencia en el mundo del Desarrollo Web. Si deseas contactarme, rellena el <strong>FORMULARIO</strong> al final de la pagina. <br>
 
                             <br>
                             Gonzalo Hernandez.
@@ -108,7 +108,7 @@ $proyectos = [
 
                     </div>
 
-                  
+
 
                     <div class="sobremi-img">
                         <picture>
@@ -128,9 +128,9 @@ $proyectos = [
 
 </header>
 
-       
 
-  
+
+
 
 <section class="proyectos" id="proyectos">
 
@@ -141,19 +141,19 @@ $proyectos = [
 
             <?php foreach ($proyectos as $proyecto) { ?>
                 <!--PROYECTO 1-->
-            
+
                 <div class="proyecto">
-                <a href="<?php echo $proyecto->getUrl()?>">
+                    <a href="<?php echo $proyecto->getUrl() ?>">
 
-                    <div class="img-proyecto">
-                        <picture>
-                    
-                            <source srcset="/build/img/<?php echo $proyecto->getImagen() . '.webp' ?>" type="image/webp">
-                            <img loading="lazy" src="/build/img/<?php echo $proyecto->getImagen() . ".png"; ?>" alt="Imagen Proyecto">
-                        </picture>
+                        <div class="img-proyecto">
+                            <picture>
 
-                    </div>
-                    </a> 
+                                <source srcset="/build/img/<?php echo $proyecto->getImagen() . '.webp' ?>" type="image/webp">
+                                <img loading="lazy" src="/build/img/<?php echo $proyecto->getImagen() . ".png"; ?>" alt="Imagen Proyecto">
+                            </picture>
+
+                        </div>
+                    </a>
 
                     <div class="titulo-proyecto">
                         <h3><?php echo $proyecto->getNombre(); ?></h3>
@@ -164,15 +164,15 @@ $proyectos = [
 
                     </div>
 
-              
-       
-                
-               
+
+
+
+
                     <div class="container-descripcionbtn">
                         <button class="descripcion-button">Ver mas</button>
-                    </div>  
-                    
-              
+                    </div>
+
+
 
                 </div>
             <?php } ?>
@@ -184,40 +184,112 @@ $proyectos = [
 
 </section>
 
+
+<section class="studies">
+    <div id="content">
+
+        <ul class="timeline">
+            <h2>Mis estudios</h2>
+            <li class="event" data-date="2016 - 2021">
+                <h3>Técnico en Computación</h3>
+                <p class="event-text">Soy Técnico en computacion recibido de una de las mejores Escuelas Técnicas de la Argentina, llamada por su nombre, la Escuela Técnica N°35 Ing. Eduardo Latzina. En terminos generales, fue una carrera muy dirigida al ambito de la programacion de Juegos, sistemas con base de datos, desarrollo de algoritmos, programacion en arduinos páginas web, logica y mátematicas </p>
+                <div class="vermas">
+                    <p>Ver mas</p>
+                </div>
+
+            </li>
+
+            <li class="event" data-date="2022">
+                <h3>Codo a Codo</h3>
+                <p class="event-text">Curso completado Full-Stack NODEJS, donde se exploraron grandes contenidos de JavaScript, manejo de rutas y seguridad de las mismas, patron de arquitectura MVC </p>
+                <div class="vermas">
+                    <p>Ver mas</p>
+                </div>
+            </li>
+            <li class="event" data-date="2022 - Actualmente">
+                <h3>Udemy - FullStack PHP</h3>
+                <p class="event-text">This is where it all goes down. You will compete head to head with your friends and rivals. Get ready!</p>
+                <div class="vermas">
+                    <p>Ver mas</p>
+                </div>
+            </li>
+            <li class="event" data-date="2023 - Actualmente">
+                <h3>Udemy - MERN Stack</h3>
+                <p class="event-text">This is where it all goes down. You will compete head to head with your friends and rivals. Get ready!</p>
+                <div class="vermas">
+                    <p>Ver mas</p>
+                </div>
+            </li>
+            <li class="event" data-date="2023">
+                <h3>Argentina Programa 4.0</h3>
+                <p class="event-text">Curso brindado por la Nacion Argentina donde se aprendio principios de UX/UI, diseños modernos para paginas web, HTML5, CSS Y JavaScript para interaccion con el DOM y agregado de animaciones</p>
+                <div class="vermas">
+                    <p>Ver mas</p>
+                </div>
+            </li>
+
+            <li class="event" data-date="2023 - Actualmente">
+                <h3>Ingeniería en Computación</h3>
+               
+                <p class="event-text">Cursando el primer año de Ingenieria en Computacion en la Unviersidad de Tres de Febrero.</p>
+                <div class="vermas">
+                    <p>Ver mas</p>
+                </div>
+            </li>
+            
+
+        </ul>
+    </div>
+
+    <div class="img-studies">
+        <picture>
+
+            <img loading="lazy" src='src/img/studyimg.svg' alt="Imagen estudio">
+        </picture>
+    </div>
+
+
+    <div class="circle circle1">
+    </div>
+    <div class="circle circle2">
+    </div>
+    <div class="circle circle3">
+    </div>
+</section>
+
 <section class="contact" id="contact">
-        <h2>Contacto</h2>
+    <h2>Contacto</h2>
 
-        <div class="container-form">
-            <form action="" class="form">
-                <div class="container-name">
-                    <label for="name">Nombre <sup>*</sup></label>
-                    <input type="text" placeholder="Tu nombre" name="name" id="name" class="form-nombre">
-                </div>
-     
+    <div class="container-form">
+        <form action="" class="form">
+            <div class="container-name">
+                <label for="name">Nombre <sup>*</sup></label>
+                <input type="text" placeholder="Tu nombre" name="name" id="name" class="form-nombre">
+            </div>
+            <div class="container-subject">
+                <label for="tema">Tema</label>
+                <input class="subject-input" type="text" name="tema" id="tema" placeholder="e.g. Soporte">
+            </div>
 
-           
-              
-
-                <div class="container-subject">
-                    <label for="tema">Tema</label>
-                    <input class="subject-input" type="text" name="tema" id="tema" placeholder="e.g. Soporte">
-                </div>
-                
-                <div class="container-msg">
-                    <label for="msg">Tu mensaje</label>
-                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Escribí aca tu mensaje" class="form-descripcion"></textarea>
-                </div>
-              
-
-                <div class="container-submit">
-                    <input type="submit" value="Submit" id="enviar-correo">
-                </div>
+            <div class="container-msg">
+                <label for="msg">Tu mensaje</label>
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Escribí aca tu mensaje" class="form-descripcion"></textarea>
+            </div>
 
 
-            </form>
-        </div>
+            <div class="container-submit">
+                <input type="submit" value="Submit" id="enviar-correo">
+            </div>
 
-        
-    </section>
+
+        </form>
+
+
+
+    </div>
+
+
+
+</section>
 
 <?php incluirTemplate('footer') ?>
