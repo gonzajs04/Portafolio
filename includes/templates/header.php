@@ -75,7 +75,7 @@
                     <li><a href="#contact" class="smooth">Contacto</a></li>
                     <li><a href="https://www.linkedin.com/in/gonza-hernandez/">Linkedin</a></li>
                     <li><a href="https://github.com/gonzajs04?tab=repositories">GitHub</a></li>
-                    <li><a href="CV - Gonzalo Hernandez.pdf" download="CV - Gonzalo Hernandez">CV</a></li>
+                    <li><a href="/cv.pdf" download="cv">CV</a></li>
                 </ul>
 
             </nav>

@@ -148,25 +148,22 @@ function desplegarSobreMi(){
     }
 }
 
-function desplegarEstudios(){
-    const textVerMas = document.querySelectorAll('.event .vermas p');
-    if(textVerMas){   
-      textVerMas.forEach(textVer =>{
-        textVer.addEventListener('click',()=>{
-           const textStudy = document.querySelector('.event-text')
-           console.log(textStudy)
-            if(textStudy.classList.contains('desplegado')){
-                
-                textStudy.classList.remove('desplegado')
-                textVer.textContent = "Ver mas";
-                return;
+function desplegarEstudios() {
+    const verMasButtons = document.querySelectorAll('.vermas p');
+    
+    verMasButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const eventItem = button.closest('.event');
+            const textStudy = eventItem.querySelector('.event-text');
+            if (textStudy.classList.contains('desplegado')) {
+                textStudy.classList.remove('desplegado');
+                button.textContent = "Ver mas";
+            } else {
+                textStudy.classList.add('desplegado');
+                button.textContent = "Ver menos";
             }
-            textStudy.classList.add('desplegado')
-            textVer.textContent = "Ver menos";
-            return;
-        })
-      })
-    }
+        });
+    });
 }
 
 

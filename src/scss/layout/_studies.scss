@@ -162,7 +162,10 @@
 }
 
 .img-studies {
-    width: 500px;
+    width: auto;
+    @include m.tablet{
+        width: 500px;
+    }
 
 }
 
