@@ -1,5 +1,16 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
+.contenedorg-proyectos{
+    position: relative;
+    padding: 5rem 3rem;
+}
+.contenedor-proyectos{
+    max-width: 100%;
+    width: 100%;
+    
+}
+
+
 
 .proyectos {
     position:relative;
@@ -24,17 +35,16 @@
     transition: transform .2s ease-in-out;
 
     margin: 1rem auto;
-    width: 76%;
+    width: 100%;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(176, 176, 176, 1);
     -moz-box-shadow: 0px 0px 5px 0px rgba(176, 176, 176, 1);
     box-shadow: 0px 0px 5px 0px rgba(176, 176, 176, 1);
 
     .img-proyecto {
-        max-height: 245px;
-
-        min-height: 244px;
         height: 100%;
         width: 100%;
+        min-height: 250px;
+        max-height: 250px;
 
         picture {
             height: 100%;
@@ -57,47 +67,8 @@
     }
 }
 
-.contenedorg-proyectos {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 4rem 0;
-    h2 {
-        text-align: center;
-        font-size: 4rem;
-        font-weight: 700;
-      margin: 0rem 0 4rem 0;
-        @include m.desktop{
-            font-size: 5rem;
-            text-align: left;
-            margin-bottom: 5rem;
-
-            margin-left: 5rem;
-
-        }
 
 
-
-
-    }
-
-}
-
-.contenedor-proyectos {
-   
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    @include m.tablet {
-        @include m.grid(3, 1fr);
-        column-gap: 2rem;
-    }
-
-
-
-}
 
 
 .titulo-proyecto {
@@ -120,19 +91,6 @@
 
 }
 
-// .contenedor-ver{
-//     padding: 1.5rem 0;
-//     border-bottom-right-radius: 20px;
-//     height: 100%;
-//     text-align: center;
-//     a{ 
-
-//         color: white;
-//         font-size: 14px;
-//     }
-
-
-// }
 
 .contenedor-ver {
     background-color: rgba(5, 0, 5, 0.918);

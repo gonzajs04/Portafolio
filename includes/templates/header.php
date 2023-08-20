@@ -6,13 +6,13 @@
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <meta name="description" content="Bienvenidos! Este es mi portafolio y te voy a mostrar lo mas importante de mi carrera siendo Desarrollador Web hasta el momento ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9673d7f4bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/build/css/app.css">
-
+    
     <title>Portfolio</title>
 
 </head>

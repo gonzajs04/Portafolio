@@ -1,4 +1,5 @@
-<?php include __DIR__ . '/includes/funciones.php';
+<?php
+ include __DIR__ . '/includes/funciones.php';
 include __DIR__ . '/classes/Proyecto.php';
 incluirTemplate('header', true);
 
@@ -132,17 +133,18 @@ $proyectos = [
 
 
 
-<section class="proyectos" id="proyectos">
+<section class="proyectos " id="proyectos">
 
-    <div class="contenedorg-proyectos">
-        <h2>Proyectos</h2>
-        <div class="contenedor-proyectos">
+
+    <div class="contenedorg-proyectos swiper mySwiper ">
+
+        <div class="contenedor-proyectos  swiper-wrapper ">
 
 
             <?php foreach ($proyectos as $proyecto) { ?>
                 <!--PROYECTO 1-->
 
-                <div class="proyecto">
+                <div class="proyecto swiper-slide">
                     <a href="<?php echo $proyecto->getUrl() ?>">
 
                         <div class="img-proyecto">
@@ -164,10 +166,6 @@ $proyectos = [
 
                     </div>
 
-
-
-
-
                     <div class="container-descripcionbtn">
                         <button class="descripcion-button">Ver mas</button>
                     </div>
@@ -176,9 +174,9 @@ $proyectos = [
 
                 </div>
             <?php } ?>
-
+          
         </div>
-
+        <div class="swiper-pagination"></div>
     </div>
 
 
@@ -219,6 +217,8 @@ $proyectos = [
     </div>
 
 
+  
+    
 
 </section>
 

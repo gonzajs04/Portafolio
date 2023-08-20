@@ -1,6 +1,4 @@
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
 
 
@@ -10,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function iniciarApp() {
-
+    
 
     const botonMenu = document.querySelector('.toggle');
     const navegacion = document.querySelector('.navegacion');
@@ -186,7 +184,8 @@ function desplegarDescripcion(containerDescripcion) {
     const textoDescripcion = containerDescripcion.querySelector('.texto-proyecto')
     const btnDescripcion = containerDescripcion.querySelector('.container-descripcionbtn button');
 
-
+    
+  if(btnDescripcion){
     btnDescripcion.addEventListener('click', () => {
 
         if (textoDescripcion.style.height == "auto") {
@@ -201,6 +200,7 @@ function desplegarDescripcion(containerDescripcion) {
             btnDescripcion.textContent = 'Ver Menos';
         }
     })
+  }
 
 
 }

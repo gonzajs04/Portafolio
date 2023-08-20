@@ -15,7 +15,7 @@ const webp = require('gulp-webp');
 
 const paths = {
     scss: 'src/scss/**/*.scss',
-    js: 'src/js/**/**.js',
+    js: 'src/js/**/{app,modernizr,particles.min,particulas}.js',
     imagenes: 'src/img/**/*'
 }
 
