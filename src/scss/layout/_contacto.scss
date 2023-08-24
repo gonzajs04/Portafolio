@@ -1,23 +1,56 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
-.contact{
+
+.contact {
     position: relative;
     z-index: 10000;
     background-color: white;
     padding: 5rem 0;
     -webkit-box-shadow: 0px 1px 5px 0px rgb(167, 167, 167);
-            -moz-box-shadow: 0px 1px 5px 0px rgb(167, 167, 167);
-          box-shadow: 0px 1px 5px 0px rgb(167, 167, 167);
+    -moz-box-shadow: 0px 1px 5px 0px rgb(167, 167, 167);
+    box-shadow: 0px 1px 5px 0px rgb(167, 167, 167);
 }
-.contact h2{
+.containerg-contact{
+    padding: 0 2rem;
+    max-width: min(100%);
+    margin: 0 auto;
+    @include m.tablet{
+        max-width: min(80%);
+    }
+}
+
+.container-contact {
+ 
+    display: grid;
+    place-items: center;
+    @include m.desktopXL {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+.contact h2 {
     font-size: 3rem;
-    color: var(--rosaFuerte);
+    /** TEXT GRADIENT */
+    color: #6e67f5;
+    background-image: -webkit-linear-gradient(45deg, #6e67f5 0%, #67e2f5 33%, #6e67f5 67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     text-transform: uppercase;
     font-weight: 800;
+
+    @include m.tablet{
+        font-size: 4.5rem;
+    }
+    @include m.desktop{
+        font-size: 5rem;
+    }
 }
 
-.form{
+.form {
     max-width: 300px;
     margin: 0 auto;
     display: flex;
@@ -27,46 +60,68 @@
     column-gap: 3rem;
     row-gap: 2rem;
 }
-.container-name{
+
+.container-name {
     grid-column: 1/3;
 
 }
-.container-name input{
+
+.container-name input {
     width: 100%;
 }
 
-@media(min-width:1024px){
-    .form{
+@media(min-width:1024px) {
+    .form {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         max-width: 600px;
     }
 
 }
 
-.form div{
+.img-contact {
+    width: 200px;
+    margin: 0 auto;
+
+    @include m.tablet{
+        width: 450px;
+    }
+
+    @include m.desktop {
+        width: 600px;
+    }
+
+}
+
+.form div {
     width: 100%;
 }
-.container-subject{
+
+.container-subject {
     grid-column: 1/3;
 }
-.container-msg{
+
+.container-msg {
     grid-column: 1/3;
 }
-.container-msg textarea{
+
+.container-msg textarea {
     width: 100%;
 }
-.form label{
+
+.form label {
     display: block;
     margin: .6rem 0;
     color: black;
     font-family: v.$fuentePrincipal;
 }
-sup{
+
+sup {
     color: red;
     font-family: v.$fuentePrincipal;
 }
-.form input:not([type="submit"]){
+
+.form input:not([type="submit"]) {
     transition: .5s all ease-in-out;
     width: 100%;
     height: 46px;
@@ -74,59 +129,65 @@ sup{
     font-family: v.$fuentePrincipal;
     outline: none;
     border: none;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
-    box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(199, 199, 199, 1);
+    box-shadow: 0px 2px 5px 0px rgba(199, 199, 199, 1);
     padding: 0 1rem;
     font-size: 1.3rem;
 }
 
-.form input:not([type="submit"]):hover{
+.form input:not([type="submit"]):hover {
     background-color: #0075fc2d
 }
 
-.container-submit{
+.container-submit {
     grid-column: 1/3;
     text-align: center;
 }
 
-.form input[type="submit"]{
+.form input[type="submit"] {
     padding: 1rem 1rem;
     font-family: v.$fuentePrincipal;
-    border-radius: 10px;
+    border-radius: 15px;
     text-decoration: none;
- 
+
     text-transform: uppercase;
     color: white;
     font-size: 1.5rem;
     font-weight: 600;
     transition: .5s all;
     width: 220px;
-    font-size: 1.1rem;
-    background-color: rgba(0, 0, 0, 0.801);
+    font-size: 1.2rem;
+    background: rgb(59,54,209);
+background: linear-gradient(283deg, rgba(59,54,209,1) 0%, rgba(103,226,245,1) 90%);
     border: none;
 
 }
 
-.form input[type="submit"]:hover{
+.form input[type="submit"]:hover {
     background-color: black;
     cursor: pointer;
 
 }
 
-textarea{
+.container-form{
+    width: 100%;
+}
+
+textarea {
     font-size: 1.3rem;
     font-family: v.$fuentePrincipal;
     padding: 1rem 1rem;
     transition: .5s background ease-in-out;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
-    box-shadow: 0px 2px 5px 0px rgba(199,199,199,1);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(199, 199, 199, 1);
+    box-shadow: 0px 2px 5px 0px rgba(199, 199, 199, 1);
     border: none;
     outline: none;
 
 
 }
-textarea:hover{
+
+textarea:hover {
     background-color: #0075fc2d;
 }

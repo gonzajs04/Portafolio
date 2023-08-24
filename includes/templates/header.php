@@ -23,6 +23,18 @@
             <div class="contenidog-header">
                 <div class="contenido-header">
 
+                 
+                    <div class="header-text" data-aos="fade-left" data-aos-delay="300">
+                        <h2>
+                            <span class="bienvenida">Bienvenidos</span>
+                            <span>Mi nombre es</span>
+                            <span>Gonzalo</span> 
+                            <span>Hernandez</span>
+                        </h2>
+                        <p>Desarrollador 👨‍💻 WEB</p>
+                    </div>
+
+
                     <div class="imagen-personal" data-aos="fade-right" data-aos-delay="500">
                         <picture>
 
@@ -30,13 +42,6 @@
                             <img loading="lazy" src="build/img/foto.jpg" alt="Imagen personal">
                         </picture>
                     </div>
-                    <div class="header-text" data-aos="fade-left" data-aos-delay="300">
-                        <h2><span>Gonzalo</span> Hernandez</h2>
-                        <p>Desarrollador 👨‍💻 WEB</p>
-                    </div>
-
-
-
 
 
                 </div>

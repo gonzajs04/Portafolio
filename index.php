@@ -1,5 +1,5 @@
 <?php
- include __DIR__ . '/includes/funciones.php';
+include __DIR__ . '/includes/funciones.php';
 include __DIR__ . '/classes/Proyecto.php';
 incluirTemplate('header', true);
 
@@ -137,7 +137,7 @@ $proyectos = [
 
 
     <div class="contenedorg-proyectos swiper mySwiper ">
-
+        <h2>Mis Proyectos</h2>
         <div class="contenedor-proyectos  swiper-wrapper ">
 
 
@@ -174,7 +174,7 @@ $proyectos = [
 
                 </div>
             <?php } ?>
-          
+
         </div>
         <div class="swiper-pagination"></div>
     </div>
@@ -183,42 +183,50 @@ $proyectos = [
 </section>
 
 
-<?php incluirTemplate('studies',false)?>
+<?php incluirTemplate('studies', false) ?>
 
 <section class="contact" id="contact">
-    <h2>Contacto</h2>
-
-    <div class="container-form">
-        <form action="" class="form">
-            <div class="container-name">
-                <label for="name">Nombre <sup>*</sup></label>
-                <input type="text" placeholder="Tu nombre" name="name" id="name" class="form-nombre">
+    <div class="containerg-contact">
+        <h2>Contacto</h2>
+        <div class="container-contact">
+            <div class="img-contact">
+                <picture>
+                    <img src="./build/img/contact-image.svg" alt="Imagen contacto">
+                </picture>
             </div>
-            <div class="container-subject">
-                <label for="tema">Tema</label>
-                <input class="subject-input" type="text" name="tema" id="tema" placeholder="e.g. Soporte">
+            <div class="container-form">
+                <form action="" class="form">
+                    <div class="container-name">
+                        <label for="name">Nombre <sup>*</sup></label>
+                        <input type="text" placeholder="Tu nombre" name="name" id="name" class="form-nombre">
+                    </div>
+                    <div class="container-subject">
+                        <label for="tema">Tema</label>
+                        <input class="subject-input" type="text" name="tema" id="tema" placeholder="e.g. Soporte">
+                    </div>
+
+                    <div class="container-msg">
+                        <label for="msg">Tu mensaje</label>
+                        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Escribí aca tu mensaje" class="form-descripcion"></textarea>
+                    </div>
+
+
+                    <div class="container-submit">
+                        <input type="submit" value="Submit" id="enviar-correo">
+                    </div>
+
+
+                </form>
+
+
+
             </div>
-
-            <div class="container-msg">
-                <label for="msg">Tu mensaje</label>
-                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Escribí aca tu mensaje" class="form-descripcion"></textarea>
-            </div>
-
-
-            <div class="container-submit">
-                <input type="submit" value="Submit" id="enviar-correo">
-            </div>
-
-
-        </form>
-
-
+        </div>
 
     </div>
 
 
-  
-    
+
 
 </section>
 

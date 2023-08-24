@@ -3,6 +3,16 @@
 
         <ul class="timeline">
             <h2>Mis estudios</h2>
+
+            <li class="event" data-date="2023 - Actualmente">
+                <h3>Ingeniería en Computación</h3>
+
+                <p class="event-text">Cursando el primer año de Ingenieria en Computacion en la Unviersidad de Tres de Febrero.</p>
+                <div class="vermas">
+                    <p>Ver mas</p>
+                </div>
+            </li>
+            
             <li class="event" data-date="2016 - 2021">
                 <h3>Técnico en Computación</h3>
                 <p class="event-text">Soy Técnico en computacion recibido de una de las mejores Escuelas Técnicas de la Argentina, llamada por su nombre, la Escuela Técnica N°35 Ing. Eduardo Latzina. En terminos generales, fue una carrera muy dirigida al ambito de la programacion de Juegos, sistemas con base de datos, desarrollo de algoritmos, programacion en arduinos páginas web, logica y mátematicas </p>
@@ -41,14 +51,7 @@
                 </div>
             </li>
 
-            <li class="event" data-date="2023 - Actualmente">
-                <h3>Ingeniería en Computación</h3>
-
-                <p class="event-text">Cursando el primer año de Ingenieria en Computacion en la Unviersidad de Tres de Febrero.</p>
-                <div class="vermas">
-                    <p>Ver mas</p>
-                </div>
-            </li>
+           
 
 
         </ul>

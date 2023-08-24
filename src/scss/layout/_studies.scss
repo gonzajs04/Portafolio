@@ -26,12 +26,16 @@
 /* Timeline */
 
 .timeline {
+    max-width: 100%;
 
     @include m.tablet{
-        max-width: 60%;
+        max-width: 100%;
 
     }
-    max-width: 80%;
+    @include m.desktopXL{
+        max-width: 60%;
+        
+    }
 
     border-left: 5px solid rgb(3, 132, 89);
     border-bottom-left-radius: 3px;
@@ -59,10 +63,17 @@
 
     h2 {
         text-align: left;
-        margin: 4rem 1rem;
+        margin: 4rem 0rem;
         text-transform: uppercase;
         font-weight: 800;
-        color: #4298c3;
+        @include m.tablet{
+            margin: 4rem 1rem;
+        }
+        
+          /** TEXT GRADIENT */ color: #8ae889; background-image: -webkit-linear-gradient(45deg, #8ae889 23%, #48d4c1 47%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+          
+        
+        font-size: 3rem;
     }
 
     .event {
@@ -77,6 +88,7 @@
                 top: 0;
 
             }
+          
 
 
         }
@@ -85,10 +97,10 @@
         padding-bottom: (50px * 0.5);
         margin-bottom: 50px;
         position: relative;
-        padding: 0 1rem 0 1rem;
+        padding: 0;
 
         h3 {
-            margin: 4rem 0;
+            margin: 3rem 0;
             font-size: 1.5rem;
 
             @include m.desktopXL {
@@ -112,9 +124,13 @@
         }
 
         &:before {
-            top: 25px;
-            font-size: 0.7em;
+            top: 50px;
+            font-size: 0.57em;
 
+            @include m.telefono{
+                top: 25px;
+
+            }
             @include m.desktopXL {
                 top: 0;
                 left: (((120px * 0.6) + 50px + 4px + 11px + (4px * 2)) * 1.5) * -1;
@@ -147,7 +163,7 @@
         .event-text {
 
             color: white;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             overflow: hidden;
             max-height: 210px;
             transition: max-height .5s ease-in-out;
@@ -156,6 +172,16 @@
                 max-height: 800px;
                }
 
+               
+            @include m.tablet{
+              
+                font-size: 1.3rem;
+            }
+
+        }
+
+        @include m.tablet{
+            padding: 0 1rem;
         }
     }
 
