@@ -38,7 +38,7 @@
 
 
     .header-text {
-        max-width: 500px;
+        max-width: 600px;
         text-align: center;
         padding: 0 1rem;
         @include m.desktop {
@@ -52,6 +52,17 @@
             font-size: 3rem;
             font-weight: 900;
             white-space: normal;
+
+            span:nth-child(4){
+                font-size: 3.6rem;
+               
+                @include m.telefono{
+                    font-size: 6.1rem;
+                }
+                @include m.desktop{
+                    font-size: 9rem;
+                }
+            }
 
             span:nth-child(3) {
                 color: rgb(56, 196, 243);
@@ -67,6 +78,7 @@
                 }
 
             }
+           
 
             @include m.tablet{
                 font-size: 5rem;
@@ -104,6 +116,7 @@
 }
 
 .header_img {
+    background-image: url('/build/img/imgprogramacion.jpg');
     background-image: url('/build/img/imgprogramacion.webp');
     background-size: cover;
     height: 950px;
