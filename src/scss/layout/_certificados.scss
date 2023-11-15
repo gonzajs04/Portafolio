@@ -2,7 +2,8 @@
 @use '../base/mixins' as m;
 .certificados{
     background-color:v.$azulOscuro;
-    padding: 5rem 0;
+    padding-top: 3rem;
+    padding-bottom: 8rem;
     .h2-title{
         font-size: 3rem;
         /** TEXT GRADIENT */
