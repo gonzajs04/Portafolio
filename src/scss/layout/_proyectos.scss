@@ -21,7 +21,7 @@
         font-weight: 800;
 
        
-          /** TEXT GRADIENT */ color: #010826; background-image: -webkit-linear-gradient(45deg, #010826 0%, #1a3b7d 50%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+  color: #010826; background-image: -webkit-linear-gradient(45deg, #010826 0%, #1a3b7d 50%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
           @include m.tablet{
             font-size: 5rem;
           }
@@ -33,10 +33,6 @@
 .proyectos {
     position:relative;
     z-index: 10000;
-
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(176,176,176,1);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(176,176,176,1);
-    box-shadow: 0px 0px 5px 0px rgba(176,176,176,1);
     padding: 0;
 
     @include m.tablet {

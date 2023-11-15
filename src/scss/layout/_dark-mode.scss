@@ -7,22 +7,16 @@ body {
       color: black;
       text-shadow: 0.5px 0.5px 4px rgba(255, 255, 255, 0.923);
     }
+
     .btn-dark {
       color: black;
       text-shadow: 0.1px 0.5px 4px rgba(255, 255, 255, 0.923);
+
       &:hover {
         color: white;
       }
     }
 
-    .tecnologias {
-      background: rgb(18, 18, 18);
-      h2 {
-        color: white;
-      }
-
-      background: rgb(18, 18, 18);
-    }
     .contenedor-vermas {
       a {
         color: rgb(17, 17, 17);
@@ -30,30 +24,35 @@ body {
       }
     }
 
-    .tecnologias {
-      -webkit-box-shadow: 1px 13px 22px -8px rgba(176, 176, 176, 1);
-      -moz-box-shadow: 1px 13px 22px -8px rgba(176, 176, 176, 1);
-      box-shadow: 1px 13px 22px -8px rgba(176, 176, 176, 1);
-      a {
-        color: white;
-      }
-    }
-
+   
     .proyectos {
-      -webkit-box-shadow: 1px 13px 22px -8px rgb(23, 23, 23);
-      -moz-box-shadow: 1px 13px 22px -8px rgb(23, 23, 23);
-      box-shadow: 1px 13px 22px -8px rgb(23, 23, 23);
-      background-color: rgb(19, 19, 19);
+      background-color: rgb(10, 10, 10);
+
+      h2 {
+        color: white;
+        background-image: -webkit-linear-gradient(45deg, white 0%, white 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+
+      }
+
+      .swiper-pagination{
+        span{
+          background-color: white;
+        }
+      }
 
       h3,
       p {
         color: white;
       }
+
       .linea-divisora {
         border-color: rgba(38, 38, 38, 0.771);
       }
-      a {
-      }
+
       h2 {
         color: white;
       }
@@ -63,40 +62,47 @@ body {
         -moz-box-shadow: 0px 0px 3px .2px rgb(0, 64, 148);
         box-shadow: 0px 0px 3px .2px rgb(0, 64, 148);
         background-color: rgb(17, 17, 17);
-        h3{
-            color: white !important;
+
+        h3 {
+          color: white !important;
         }
-        p{
-            color: rgb(236, 236, 236);
+
+        p {
+          color: rgb(236, 236, 236);
         }
       }
     }
 
 
- 
-    .contact{
-        background-color: rgb(12, 12, 12);
+    .contact {
+      background-color: rgb(12, 12, 12);
     }
-    .contact h2{
-        color: white;
+
+    .contact h2 {
+      color: white;
     }
-    .contact label{
-        color: white;
+
+    .contact label {
+      color: white;
     }
-    .contact input:not([type="submit"]){
-        background-color: black;
-        box-shadow: none !important;
-        color: white;
+
+    .contact input:not([type="submit"]) {
+      background-color: black;
+      box-shadow: none !important;
+      color: white;
     }
-    .contact textarea{
-        background-color: black;
-        box-shadow: none;
-        color: white;
+
+    .contact textarea {
+      background-color: black;
+      box-shadow: none;
+      color: white;
     }
+
     .footer {
       box-shadow: 0 0 5px 0 #b0b0b0;
       background: black;
     }
+
     .descripcion-button {
       color: white;
     }
