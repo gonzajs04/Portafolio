@@ -1,4 +1,5 @@
 @use '../base/mixins.scss' as m;
+@use '../base/variables' as v;
 
 .header {
     position: relative;
@@ -53,34 +54,9 @@
             font-weight: 900;
             white-space: normal;
 
-            span:nth-child(4){
-                font-size: 3.6rem;
-               
-                @include m.telefono{
-                    font-size: 6.1rem;
-                }
-                @include m.desktop{
-                    font-size: 9rem;
-                }
-            }
+          
 
-            span:nth-child(3) {
-                color: rgb(56, 196, 243);
-                animation: parpadeoNombre 2s linear infinite;
-                font-size: 3rem;
-
-                @include m.tablet{
-                    font-size: 5rem;
-                 }
-
-                @include m.desktop{
-                    font-size: 9rem;
-                }
-
-            }
-           
-
-            @include m.tablet{
+            @include m.telefono{
                 font-size: 5rem;
                 line-height: 7rem;
             }
@@ -90,6 +66,41 @@
                 font-weight: 800;
                 line-height: 9rem;
             }
+
+            span:nth-child(2){
+                display: block;
+                @include m.desktop{
+                    display: inline;
+                }
+
+            }
+
+            span:nth-child(4){
+                font-size: 3.6rem;
+               display: block;
+                @include m.telefono{
+                    font-size: 5rem;
+                }
+                @include m.desktop{
+                    font-size: 9rem;
+                }
+            }
+
+            span:nth-child(3) {
+                color: rgb(56, 196, 243);
+                animation: parpadeoNombre 2s linear infinite;
+                font-size: 4rem;
+
+                @include m.telefono{
+                    font-size: 5rem;
+                 }
+
+                @include m.desktop{
+                    font-size: 9rem;
+                }
+
+            }
+           
 
 
         }
@@ -126,7 +137,11 @@
 }
 
 .bienvenida {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    @media(min-width: 420px) {
+        font-size: 2rem;
+    }
+  
     line-height: 3rem !important;
     padding: 0 .5rem;
     display: block;
