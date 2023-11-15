@@ -84,6 +84,36 @@ p,a{
     }
 }
 
+@keyframes borderAnimation{
+    0%{
+        -webkit-box-shadow: 0px 0px 17px 4px v.$azul;
+        -moz-box-shadow: 0px 0px 17px 4px v.$azul;
+        box-shadow: 0px 0px 17px 4px v.$azul;
+    }
+    30%{
+        -webkit-box-shadow: 0px 0px 17px 4px v.$violeta;
+        -moz-box-shadow: 0px 0px 17px 4px v.$violeta;
+        box-shadow: 0px 0px 17px 4px v.$violeta;
+    }
+    60%{
+        -webkit-box-shadow: 0px 0px 17px 4px v.$rosa;
+        -moz-box-shadow: 0px 0px 17px 4px v.$rosa;
+        box-shadow: 0px 0px 17px 4px v.$rosa;
+    }
+    90%{
+        -webkit-box-shadow: 0px 0px 17px 4px v.$rosa;
+        -moz-box-shadow: 0px 0px 17px 4px v.$rosa;
+        box-shadow: 0px 0px 17px 4px v.$rosa;
+    }
+    100%{
+        
+            -webkit-box-shadow: 0px 0px 17px 4px v.$azul;
+            -moz-box-shadow: 0px 0px 17px 4px v.$azul;
+            box-shadow: 0px 0px 17px 4px v.$azul;
+        
+    }
+}
+
 /*AOS ANIMATIONS*/
 
 

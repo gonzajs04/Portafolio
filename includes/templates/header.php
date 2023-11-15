@@ -3,8 +3,8 @@
 
 <head>
     <link rel="shortcut icon" href="../../build/img/favicon.ico" />
-
     <meta charset="UTF-8">
+    <meta name="theme-color" content="#03016D">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Bienvenidos! Este es mi portafolio y te voy a mostrar lo mas importante de mi carrera siendo Desarrollador Web hasta el momento ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,7 +54,7 @@
 
         <button class="toggle" data-aos="fade-down">
                 <i class="fa-solid fa-bars"></i>
-            </button>
+        </button>
 
 
         <div class="contenido-navegacion">

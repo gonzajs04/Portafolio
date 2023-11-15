@@ -1,0 +1,52 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.certificados{
+    background-color:v.$azulOscuro;
+    padding: 5rem 0;
+    .h2-title{
+        font-size: 3rem;
+        /** TEXT GRADIENT */
+        color: #6e67f5;
+        background-image: -webkit-linear-gradient(45deg, #6e67f5 0%, #67e2f5 33%, #6e67f5 67%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 800;
+    
+        @include m.tablet{
+            font-size: 4.5rem;
+        }
+        @include m.desktop{
+            font-size: 5rem;
+        }
+    }
+}
+
+.container-datos-certificados{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.certificado{
+    border-radius: 34px;
+    text-align: center;
+    animation: borderAnimation 8s linear infinite;
+}
+
+.container-titulo-certificado{
+    h2{
+        color: white;
+        font-weight: 700;
+    }
+}
+.container-imagen-certificado{
+    width: 100% ;
+    margin: 0 auto;
+    img { border-radius: 30px;}
+
+} 

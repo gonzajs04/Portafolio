@@ -1,9 +1,9 @@
 <?php
 include __DIR__ . '/includes/funciones.php';
 include __DIR__ . '/classes/Proyecto.php';
-incluirTemplate('header', true);
-
 include __DIR__ . '/classes/Lenguaje.php';
+include __DIR__ . '/classes/Certificado.php';
+incluirTemplate('header', true);
 $lenguajes = [
     new Lenguaje("HTML", "minihtml.png", "minihtml.webp", "https://developer.mozilla.org/es/docs/Web/HTML", "FRONT"),
     new Lenguaje("CSS", "minicss.png", "minicss.webp", "", "FRONT"),
@@ -23,6 +23,10 @@ $lenguajes = [
     new Lenguaje("COMPOSER", "composer-logo.png", "composer-logo.webp", "", "GESTOR"),
     new Lenguaje("JAVA", "minijava.png", "minijava.webp", "", "BACK"),
     new Lenguaje("C++", "minic.png", "minic.webp", "", "BACK"),
+];
+
+$certificados = [
+    (new Certificado("Argentina Programa 4.0", "argprograma"))
 
 
 ];
@@ -43,6 +47,14 @@ $proyectos = [
 
     // ", "https://bienesraicesfront.netlify.app/")),
 
+
+    (new Proyecto("Hupa Hamburguesas", "hupa", "Diseño y desarrollo web de Hupa Hamburguesas. Esta pagina fue desarrollada con React, Vite, Sass, JavaScript. Se utilizo POSTCSS para minificacion de css y Terser para minificacion de JavaScript. Se utilizo TinyPng para comprimir tamaño de las imagenes.Se utilizo Lazy Load para cargar correctamente la pagina y sus imagenes. Este diseño es original y creado por mi del emprendimiento HUPA HAMBURGUESAS que se encuentra en Argentina - Buenos Aires ", "https://hupahamburguesas.netlify.app/")),
+
+
+    (new Proyecto("Cotizador de criptos", "cotizador", "Cotiza tus criptos en cualquier momento! Esta página fue desarrollada con REACT, y como terminal de ejecucion Vite. Se utilizo la libreria de Styled-components para estilizar componentes reutilizables. Asimismo, se consumió la API de CryptoCompare para extraer los datos de las mismas.", "https://cotizacriptom.netlify.app/")),
+
+    (new Proyecto("PlayIt", "playit", "PlayIT esta desarrollado con RemixRun, el nuevo framework de React. Este fue utilizado para manejo de rutas, uso de loader para cargas de APIS desde el servidor, etiquetas meta para identificar en que ruta se encuentra el usuario. Para la estilización, se utilizó CSS puro. Además, se utilizo la API de greenborn para generar palabras aleatorias", "https://playit-gonzajs04.vercel.app/")),
+
     (new Proyecto("CloudMovie", "cloudmovie", "Este es mi primer proyecto como FULL STACK DEVELOPER PHP, el cual consiste, del manejo de las tecnologias: HTML,CSS,SCSS,JAVASCRIPT,GULP,PHP,
     MYSQL. Este proyecto es una pagina de peliculas con mi propia base de datos, la cual podes, BUSCAR PELICULAS, VER SUS TRAILERS, FILTRAR POR GENEROS, Y POSEE UN ADMINISTRADOR DE PELICULAS PARA: Agregar peliculas, Actualizarlas y eliminarlas ", "https://cloudmoviegh.000webhostapp.com/")),
     (new Proyecto("WeatherLike", "weatherlike", "Este es un proyecto el cual consumo el API de OPENWEATHER. Este proyecto permite visualizar todas las TEMPERATURAS y otras cosas de todo el mundo. Para ver la pagina, toca el link ", "https://weatherlikev2.netlify.app/")),
@@ -51,8 +63,10 @@ $proyectos = [
     (new Proyecto("BlueeBerry", "blueberry", "Blueeberry es una plataforma que ofrece las mejores joyas de Inglaterra. Desarrollada con React, Sass y Vite, brinda una experiencia visual atractiva y funcional. La integración de  permite una navegación fluida entre secciones. Descubre nuestras exquisitas joyas en un solo lugar. ¡Bienvenido a Blueberry! ", "https://blueberryj.netlify.app/")),
     (new Proyecto("PacificOcean", "pacificocean", "Diseño y desarrollo web de Pacific Ocean. Esta pagina fue desarrollada con React, Vite, Sass, JavaScript. Ayuda a los animales marinos que tanto nos necesitan, de la mano que ellos no tienen y la voz que no pueden reproducir. Se consumio una API de noticias la cual debido a no tener permisos, no sera mostrada. Se utilizo POSTCSS para minificacion de css y Terser para minificacion de JavaScript. Se utilizo TinyPng para comprimir tamaño de las imagenes. Se utilizo la libreria I18Next para sistema de traduccion de Español a Ingles. Lazy Load y suspense para cargar correctamente la pagina y sus imagenes. ", "https://pacificocean.netlify.app/")),
 
-    (new Proyecto("Hupa Hamburguesas", "hupa", "Diseño y desarrollo web de Hupa Hamburguesas. Esta pagina fue desarrollada con React, Vite, Sass, JavaScript. Se utilizo POSTCSS para minificacion de css y Terser para minificacion de JavaScript. Se utilizo TinyPng para comprimir tamaño de las imagenes.Se utilizo Lazy Load para cargar correctamente la pagina y sus imagenes. Este diseño es original y creado por mi del emprendimiento HUPA HAMBURGUESAS que se encuentra en Argentina - Buenos Aires ", "https://hupahamburguesas.netlify.app/"))
 ]
+
+
+
 ?>
 
 
@@ -183,7 +197,11 @@ $proyectos = [
 </section>
 
 
-<?php incluirTemplate('studies', false) ?>
+
+
+<?php incluirTemplate('studies', false);?>
+
+<?php include __DIR__ . '/includes/templates/certificates.php'?>
 
 <section class="contact" id="contact">
     <div class="containerg-contact">
@@ -225,9 +243,8 @@ $proyectos = [
 
     </div>
 
-
-
-
 </section>
+
+
 
 <?php incluirTemplate('footer') ?>
