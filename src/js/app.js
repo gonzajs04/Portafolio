@@ -1,9 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-
-
     iniciarApp();
-
 })
 
 
@@ -28,9 +25,22 @@ function iniciarApp() {
 
         })
 
-        enviarMail()
+        enviarMail();
+
+        abrirImagen();
+
+    }
 
 
+    function abrirImagen(){
+        const body = document.querySelector('body')
+        const certificados = document.querySelectorAll('.container-imagen-certificado');
+        certificados.forEach(certificado=>{
+            certificado.addEventListener('click',()=>{
+                certificado.classList.toggle('fixed-img');
+                body.classList.toggle('no-scroll');
+            })
+        })
     }
 
     function enviarMail() {

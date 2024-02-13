@@ -26,7 +26,8 @@ $lenguajes = [
 ];
 
 $certificados = [
-    (new Certificado("Argentina Programa 4.0", "argprograma"))
+    (new Certificado("Argentina Programa 4.0", "argprograma")),
+    (new Certificado("Codo a Codo 4.0", "codoacodoc"))
 
 
 ];

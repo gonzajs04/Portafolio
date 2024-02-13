@@ -28,15 +28,21 @@
 
 .container-datos-certificados{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+   row-gap: 5rem;
     max-width: 90%;
     margin: 0 auto;
+    @include m.tablet{
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 5rem;
+    }
 }
 
 .certificado{
     border-radius: 34px;
     text-align: center;
     animation: borderAnimation 8s linear infinite;
+    position: relative;
+    max-height: 320px ;
 }
 
 .container-titulo-certificado{
@@ -48,6 +54,61 @@
 .container-imagen-certificado{
     width: 100% ;
     margin: 0 auto;
-    img { border-radius: 30px;}
+    height: 100%;
+    overflow: hidden;
+    border-radius: 35px;
+    picture{
+        height: 100%;
+    }
+   
+    img { 
+        border-radius: 35px;
+        overflow: hidden;
+        height: fit-content;
+        object-fit: cover;
+
+        @include m.tablet{
+      
+            height: 100%;
+        }
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.025);
+    }
+    }
+
 
 } 
+
+.fixed-img{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-height: 100%;
+    z-index: 1000;
+    animation: none;
+    display: grid;
+    place-content: center;
+    box-shadow: none;
+    z-index: 100000;
+    background-color: v.$negroTransparente;
+    overflow-y: scroll;
+    padding: 0 2rem;
+ 
+    @include m.tablet{
+        place-items: center;
+        place-content:initial;
+        padding: 0;
+        img{
+            margin: 0 auto;
+            width: 60%;
+            transition: all .5s ease-in-out;
+            
+    
+        } 
+    }
+
+}

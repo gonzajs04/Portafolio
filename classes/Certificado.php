@@ -3,6 +3,7 @@
 class Certificado{
    private $nombreCertificado;
    private $imagenCertificado;
+
     function __construct($nombreCertificado, $imagenCertificado)
     {
         $this->nombreCertificado = $nombreCertificado;
@@ -15,6 +16,7 @@ class Certificado{
     public function getImagenCertificado(){
         return $this->imagenCertificado;
     }
+   
 
 }
 
