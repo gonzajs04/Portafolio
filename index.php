@@ -34,6 +34,8 @@ $certificados = [
 
 $proyectos = [
 
+    (new Proyecto("AppSalon", "appsalon", "AppSalon es una aplicación web desarrollada con las tecnologías de PHP, MySQL, GulpJS, JavaScript, SASS con la implementacion de la arquitectura MVC para el manejo de RUTAS, Controladores y diferentes modelos que interactúan con la base de datos y ActiveRecord, que matiene una sincronia entre la misma y objetos espejo de las tablas y atributos. Esta aplicacion permite hacer todo el procedimiento normal de una pagina web con USUARIOS. Altas de usuarios, Inicio de sesion, Olvidar contraseña, manejo de errores, entre otros. De la misma manera, este sistema permite crear nuevas citas y cuenta con un sistema administrador para comprobar las mismas, eliminarlas y/o modificarlas. Para el registro de nuevos clientes, se utilizo el paquete PHPmailer y MailTrap para la validacion de cuentas a traves de TOKENS. Asimismo, en este proyecto aprendi a proteger rutas importantes con librerias como vlucas/phpdotenv, disponible en COMPOSER. Proba con el siguiente usuario: estebanjuarez@gmail.com | estebanjuarez", "https://tisdazu.sao.dom.my.id/")),
+
     (new Proyecto("Hupa Hamburguesas", "hupa", "Diseño y desarrollo web de Hupa Hamburguesas. Esta pagina fue desarrollada con React, Vite, Sass, JavaScript. Se utilizo POSTCSS para minificacion de css y Terser para minificacion de JavaScript. Se utilizo TinyPng para comprimir tamaño de las imagenes.Se utilizo Lazy Load para cargar correctamente la pagina y sus imagenes. Este diseño es original y creado por mi del emprendimiento HUPA HAMBURGUESAS que se encuentra en Argentina - Buenos Aires ", "https://hupahamburguesas.netlify.app/")),
 
 
@@ -43,6 +45,9 @@ $proyectos = [
     
         (new Proyecto("CloudMovie", "cloudmovie", "Este es mi primer proyecto como FULL STACK DEVELOPER PHP, el cual consiste, del manejo de las tecnologias: HTML,CSS,SCSS,JAVASCRIPT,GULP,PHP,
         MYSQL. Este proyecto es una pagina de peliculas con mi propia base de datos, la cual podes, BUSCAR PELICULAS, VER SUS TRAILERS, FILTRAR POR GENEROS, Y POSEE UN ADMINISTRADOR DE PELICULAS PARA: Agregar peliculas, Actualizarlas y eliminarlas ", "https://cloudmoviegh.000webhostapp.com/")),
+
+
+
         (new Proyecto("WeatherLike", "weatherlike", "Este es un proyecto el cual consumo el API de OPENWEATHER. Este proyecto permite visualizar todas las TEMPERATURAS y otras cosas de todo el mundo. Para ver la pagina, toca el link ", "https://weatherlikev2.netlify.app/")),
     
     // (new Proyecto("Almas fortalecidas piedras", "PROYECTO2", "Este es mi primer proyecto de todos, en el cual solamente utilice HTML y CSS | This is my first project. I used only HTML and CSS", "https://almaspiedrasfortalecidas.netlify.app/")),
@@ -144,9 +149,6 @@ $proyectos = [
 
 
 </header>
-
-
-
 
 
 <section class="proyectos " id="proyectos">
