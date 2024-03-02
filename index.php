@@ -27,29 +27,32 @@ $lenguajes = [
 
 $certificados = [
     (new Certificado("Argentina Programa 4.0", "argprograma")),
-    (new Certificado("Codo a Codo 4.0", "codoacodoc"))
+    (new Certificado("Codo a Codo 4.0", "codoacodoc")),
+    (new Certificado("Efset Certificate", "efset")),
 
 
 ];
 
 $proyectos = [
+    (new Proyecto("TaskNow", "tasknow", "LEste proyecto fue desarrollado con PHP, con el patron de diseño de MVC(Modelo vista controlador). Para la estilizacion de la aplicacion, se utilizo SASS, funciones mixins. se aprovecho la definicion de variables para elementos necesarios con el fin de no cometer ningun error a la hora de establecer un tamaño, una tipografia, un color, etc. Asimismo, cada parte de estilos reutilizable, se creo un componente para no ser reduntante.
+    Se deja de lado el codigo SPAGHETTI, patron fuertemente criticado a PHP", "https://tasknowdev.000webhostapp.com/")),
 
     (new Proyecto("AppSalon", "appsalon", "AppSalon es una aplicación web desarrollada con las tecnologías de PHP, MySQL, GulpJS, JavaScript, SASS con la implementacion de la arquitectura MVC para el manejo de RUTAS, Controladores y diferentes modelos que interactúan con la base de datos y ActiveRecord, que matiene una sincronia entre la misma y objetos espejo de las tablas y atributos. Esta aplicacion permite hacer todo el procedimiento normal de una pagina web con USUARIOS. Altas de usuarios, Inicio de sesion, Olvidar contraseña, manejo de errores, entre otros. De la misma manera, este sistema permite crear nuevas citas y cuenta con un sistema administrador para comprobar las mismas, eliminarlas y/o modificarlas. Para el registro de nuevos clientes, se utilizo el paquete PHPmailer y MailTrap para la validacion de cuentas a traves de TOKENS. Asimismo, en este proyecto aprendi a proteger rutas importantes con librerias como vlucas/phpdotenv, disponible en COMPOSER. Proba con el siguiente usuario: estebanjuarez@gmail.com | estebanjuarez", "https://tisdazu.sao.dom.my.id/")),
 
     (new Proyecto("Hupa Hamburguesas", "hupa", "Diseño y desarrollo web de Hupa Hamburguesas. Esta pagina fue desarrollada con React, Vite, Sass, JavaScript. Se utilizo POSTCSS para minificacion de css y Terser para minificacion de JavaScript. Se utilizo TinyPng para comprimir tamaño de las imagenes.Se utilizo Lazy Load para cargar correctamente la pagina y sus imagenes. Este diseño es original y creado por mi del emprendimiento HUPA HAMBURGUESAS que se encuentra en Argentina - Buenos Aires ", "https://hupahamburguesas.netlify.app/")),
 
 
-        (new Proyecto("Cotizador de criptos", "cotizador", "Cotiza tus criptos en cualquier momento! Esta página fue desarrollada con REACT, y como terminal de ejecucion Vite. Se utilizo la libreria de Styled-components para estilizar componentes reutilizables. Asimismo, se consumió la API de CryptoCompare para extraer los datos de las mismas.", "https://cotizacriptom.netlify.app/")),
-    
-        (new Proyecto("PlayIt", "playit", "PlayIT esta desarrollado con RemixRun, el nuevo framework de React. Este fue utilizado para manejo de rutas, uso de loader para cargas de APIS desde el servidor, etiquetas meta para identificar en que ruta se encuentra el usuario. Para la estilización, se utilizó CSS puro. Además, se utilizo la API de greenborn para generar palabras aleatorias", "https://playit-gonzajs04.vercel.app/")),
-    
-        (new Proyecto("CloudMovie", "cloudmovie", "Este es mi primer proyecto como FULL STACK DEVELOPER PHP, el cual consiste, del manejo de las tecnologias: HTML,CSS,SCSS,JAVASCRIPT,GULP,PHP,
+    (new Proyecto("Cotizador de criptos", "cotizador", "Cotiza tus criptos en cualquier momento! Esta página fue desarrollada con REACT, y como terminal de ejecucion Vite. Se utilizo la libreria de Styled-components para estilizar componentes reutilizables. Asimismo, se consumió la API de CryptoCompare para extraer los datos de las mismas.", "https://cotizacriptom.netlify.app/")),
+
+    (new Proyecto("PlayIt", "playit", "PlayIT esta desarrollado con RemixRun, el nuevo framework de React. Este fue utilizado para manejo de rutas, uso de loader para cargas de APIS desde el servidor, etiquetas meta para identificar en que ruta se encuentra el usuario. Para la estilización, se utilizó CSS puro. Además, se utilizo la API de greenborn para generar palabras aleatorias", "https://playit-gonzajs04.vercel.app/")),
+
+    (new Proyecto("CloudMovie", "cloudmovie", "Este es mi primer proyecto como FULL STACK DEVELOPER PHP, el cual consiste, del manejo de las tecnologias: HTML,CSS,SCSS,JAVASCRIPT,GULP,PHP,
         MYSQL. Este proyecto es una pagina de peliculas con mi propia base de datos, la cual podes, BUSCAR PELICULAS, VER SUS TRAILERS, FILTRAR POR GENEROS, Y POSEE UN ADMINISTRADOR DE PELICULAS PARA: Agregar peliculas, Actualizarlas y eliminarlas ", "https://cloudmoviegh.000webhostapp.com/")),
 
 
 
-        (new Proyecto("WeatherLike", "weatherlike", "Este es un proyecto el cual consumo el API de OPENWEATHER. Este proyecto permite visualizar todas las TEMPERATURAS y otras cosas de todo el mundo. Para ver la pagina, toca el link ", "https://weatherlikev2.netlify.app/")),
-    
+    (new Proyecto("WeatherLike", "weatherlike", "Este es un proyecto el cual consumo el API de OPENWEATHER. Este proyecto permite visualizar todas las TEMPERATURAS y otras cosas de todo el mundo. Para ver la pagina, toca el link ", "https://weatherlikev2.netlify.app/")),
+
     // (new Proyecto("Almas fortalecidas piedras", "PROYECTO2", "Este es mi primer proyecto de todos, en el cual solamente utilice HTML y CSS | This is my first project. I used only HTML and CSS", "https://almaspiedrasfortalecidas.netlify.app/")),
 
     // (new Proyecto("El Granizado", "Proyecto1", "Este es mi segundo proyecto. Ya con mas practica, empece a jugar un poco con HTML y CSS. | This is my second project, with more practice, I started to play a little bit with HTML and CSS", "https://elgranizado.netlify.app/")),
@@ -92,7 +95,7 @@ $proyectos = [
                         <hr>
                         <p class="sobremi-desc">¡Hola! Soy Gonzalo Hernández y tengo 20 años.
                             Soy técnico en computación y desarrollador web, cursando la carrera de Ingeniera en Informatica.
-                            Hace 1 año incursioné en el mundo del desarrollo web. Actualmente desarrollo webs como FULLSTACK PHP con MYSQL como gestor de base de datos.
+                            Hace 2 año incursioné en el mundo del desarrollo web. Actualmente desarrollo paginas como FULLSTACK PHP con MYSQL como gestor de base de datos.
                             Asimismo, desarrollo Landing Pages con React y CSS(Sass o TailwindCSS).
 
                             Suelo adentrarme a nuevos desafíos para aprender, ponerle mucha pasión y la dedicación que requiera hasta llegar a la meta deseada.
@@ -203,9 +206,9 @@ $proyectos = [
 
 
 
-<?php incluirTemplate('studies', false);?>
+<?php incluirTemplate('studies', false); ?>
 
-<?php include __DIR__ . '/includes/templates/certificates.php'?>
+<?php include __DIR__ . '/includes/templates/certificates.php' ?>
 
 <section class="contact" id="contact">
     <div class="containerg-contact">
