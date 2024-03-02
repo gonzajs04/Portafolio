@@ -45,7 +45,7 @@
     letter-spacing: 0.5px;
     position: relative;
     line-height: 1.4em;
-    font-size: 1.7rem;
+
     padding: 50px;
     @include m.tablet{
         padding: 50px;
@@ -100,7 +100,7 @@
         padding: 0;
 
         h3 {
-            margin: 3rem 0;
+            margin-bottom: 1rem;
             font-size: 1.5rem;
 
             @include m.desktopXL {
@@ -109,6 +109,11 @@
 
             }
         }
+
+        span{
+            font-size: 1rem;
+        }
+       
 
         &:last-of-type {
             padding-bottom: 0;
@@ -123,31 +128,7 @@
             top: 0;
         }
 
-        &:before {
-            top: 50px;
-            font-size: 0.57em;
-
-            @include m.telefono{
-                top: 25px;
-
-            }
-            @include m.desktopXL {
-                top: 0;
-                left: (((120px * 0.6) + 50px + 4px + 11px + (4px * 2)) * 1.5) * -1;
-                font-size: 0.9em;
-
-            }
-
-            color: fade(white, 40%);
-            content: attr(data-date);
-            font-weight: 100;
-
-            @include m.desktopXL {
-                text-align: right;
-            }
-
-            min-width: 150px;
-        }
+     
 
         &:after {
             box-shadow: 0 0 0 4px #4298c3;
@@ -161,7 +142,6 @@
         }
 
         .event-text {
-
             color: white;
             font-size: 1.1rem;
             overflow: hidden;
@@ -172,7 +152,7 @@
                 max-height: 800px;
                }
 
-               
+            
             @include m.tablet{
               
                 font-size: 1.3rem;

@@ -57,9 +57,7 @@
         </button>
 
 
-        <div class="contenido-navegacion">
 
-        
 
             <nav class="navegacion">
                 <div class="contenedor-botones">
@@ -79,12 +77,12 @@
 
                     <li><a href="#contact" class="smooth">Contacto</a></li>
                     <li><a href="https://www.linkedin.com/in/gonza-hernandez/">Linkedin</a></li>
-                    <li><a href="https://github.com/gonzajs04?tab=repositories">GitHub</a></li>
-                    <li><a href="/cv.pdf" download="cv">CV</a></li>
+                    <li><a href="https://github.com/gonzajs04">GitHub</a></li>
+                    <li><a href="/cv.docx" download="cv">CV</a></li>
                 </ul>
 
             </nav>
-        </div>
+
         <?php if ($inicio === true) { ?>
             <div class="header_img">
 
