@@ -27,7 +27,7 @@
 }
 
 .container-certificados{
-    max-width: 78%;
+    max-width: 89%;
     margin: 0 auto;
 }
 
@@ -43,9 +43,7 @@
 }
 
 .certificado{
-    border-radius: 34px;
     text-align: center;
-    animation: borderAnimation 8s linear infinite;
     position: relative;
     max-height: 320px ;
 }
@@ -58,10 +56,10 @@
 }
 .container-imagen-certificado{
     width: 100% ;
+    border-radius: 35px;
     margin: 0 auto;
     height: 100%;
     overflow: hidden;
-    border-radius: 35px;
     picture{
         height: 100%;
     }
@@ -71,7 +69,7 @@
         overflow: hidden;
         height: fit-content;
         object-fit: cover;
-
+        transition: transform .2s ease-in;
         @include m.tablet{
       
             height: 100%;
